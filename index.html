@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couriway's 100K Stronghold Summary</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>100K Stronghold Summary</h1>
+    <p>In 2024, I was watching one of Couriway's streams, and chat was talking about what sort of things might be in the seeds that get rolled, but never actually found during the run. Inspired by this, I wrote some (somewhat slow) code to scan through all 128 strongholds in all of Couriway's seeds, to see if there were any 8-eye portals. I didn't find any, but did find a bunch of other interesting things, and since then, I've continued to scan all of the seeds rolled throughout the 100K challenge, usually within a few minutes of the run being completed, and share the coolest finds with the stream. This site is intended to document all of the interesting things I find, to avoid them getting lost to time.</p>
+    
+    <p>For those who are unaware, each world has 128 strongholds, <a href="https://minecraft.wiki/w/Stronghold#Java_Edition">which generate in ring around 0,0</a>. As these rings grow, the number of strongholds in each one increases. Collectively, the 6th and 7th rings contain exactly half of a world's strongholds, which is why so many things on this page seem to be within those two rings. Less than 15% of strongholds are within the first three rings. It is somewhat rare Couri will travel far enough in the Nether to go beyond third ring, which is why he is unlikely to have come across most things on this page.</p>
+
+    <p>If you want to get in touch, you can usually find me in Couri's discord as @luisc99 :)</p>
+
+    <p>Anywhere where text is <span data-copy=":)">underlined</span>, clicking on it will copy either the seed or a /tp command to your clipboard for easy use. If there is a <span data-tippy-content="For certain terminology or other things that need clarifying, I'll usually put them in a tooltip like this">question mark</span> by some text, hovering over it will provide more detail about something.</p>
+    <br>
+    
+    <div class=contents>
+        <p class="large">Skip to:</p>
+        <ul>
+            <li><a href="#general-info">General Information</a></li>
+            <ul>
+                <li><a href="#eye-summaries">Eye Summaries</a></li>
+                <li><a href="#eyes-per-seed">Total Eyes per Seed</a></li>
+            </ul>
+            <li><a href="#high-eyes">High Eye Counts</a></li>
+            <ul>
+                <li><a href="#six-eyes">6 Eye Portals</a></li>
+                <li><a href="#seven-eyes">7 Eye Portals</a></li>
+            </ul>
+            <li><a href="#surface-exposed">Surface Exposed Strongholds</a></li>
+            <ul>
+                <li><a href="#surface-exposed-barely">Few Blocks</a></li>
+                <li><a href="#surface-exposed-starter">Just Starter</a></li>
+                <li><a href="#surface-exposed-single">Single Room (excl. Starter)</a></li>
+                <li><a href="#surface-exposed-multiple">Multiple Rooms</a></li>
+            </ul>
+            <li><a href="#corrupted">Corrupted End Portals</a></li>
+            <ul>
+                <li><a href="#corrupted-lava">Lava Pool</a></li>
+                <li><a href="#corrupted-water">Water Pool</a></li>
+                <li><a href="#corrupted-ruined-portal">Ruined Portal</a></li>
+            </ul>
+            <li><a href="#favourites" data-tippy-content="A curated list of my personal favourite finds over all the seeds so far, including all the seeds where more than one interesting thing occurs">Personal Favourites</a></li>
+        </ul>
+    </div>
+    
+    
+
+    <section>
+        <h2 id="general-info">General Information</h2>
+        <p>A total of <b>8023</b> seeds were searched, for a total of <b>1,026,944</b> strongholds. This is one more than the number of known seeds from 1.16.1, as seed 0 was also searched <a href="https://youtu.be/k9FMq8-IOy4?si=22o0w_whRv_8zUhJ&t=4000">due to run #3606</a>.</p>
+        <p>These statistics were last updated at the end of run <b>8216</b>, and cover all known seeds before that.</p>
+        <p>At the moment, this page does not include any data from seeds <span data-tippy-content="Runs are played in the most recent version every 100 runs, and occasionally other runs for charity">played in recent versions</span>, although I'm working on that and will add later on down the line. So far, there has been 73 recent version runs.</p>
+        <p class="disclaimer">Approximately 120 runs are missing a seed, due to it not being added to the spreadsheet at the time, and no surviving videos existing. <a href="#missing-seeds">A full list can be found at the bottom of the page</a>. Should these ever get discovered, I'll scan them for anything interesting :)</p>
+        
+        <h3 id="eye-summaries">Eye Summaries</h3>
+        <table>
+            <tr><th>Eyes</th>   <th>Actual Count</th>   <th>Actual %</th>       <th r>Expected %</th>     <th>Expected Count</th>   <th><span data-tippy-content="Difference between actual and expected eye counts. More than expected is positive">Difference</span></th></tr>
+            <tr><td>0</td>      <td>290,022</td>        <td>28.241%</td>        <td r>28.24%</td>         <td>290,039</td>          <td class="negative">-17</td></tr>
+            <tr><td>1</td>      <td>386,731</td>        <td>37.658%</td>        <td r>37.66%</td>         <td>386,719</td>          <td class="positive">+12</td></tr>
+            <tr><td>2</td>      <td>236,131</td>        <td>22.994%</td>        <td r>23.01%</td>         <td>236,328</td>          <td class="negative">-197</td></tr>
+            <tr><td>3</td>      <td>87,701</td>         <td>8.540%</td>         <td r>8.52%</td>          <td>87,529</td>           <td class="positive">+172</td></tr>
+            <tr><td>4</td>      <td>21,974</td>         <td>2.140%</td>         <td r>2.13%</td>          <td>21,882</td>           <td class="positive">+92</td></tr>
+            <tr><td>5</td>      <td>3,847</td>          <td>0.375%</td>         <td r>0.38%</td>          <td>3,890</td>            <td class="negative">-43</td></tr>
+            <tr><td>6</td>      <td>489</td>            <td>0.048%</td>         <td r>0.05%</td>          <td>504</td>              <td class="negative">-15</td></tr>
+            <tr><td>7</td>      <td>49</td>             <td>0.005%</td>         <td r>0.005%</td>         <td>48</td>               <td class="positive">+1</td></tr>
+            <tr><td>8</td>      <td>0</td>              <td>0.000%</td>         <td r>0.0003%</td>        <td>3</td>                <td class="negative">-3</td></tr>
+            <tr><td>9</td>      <td>0</td>              <td>0.000%</td>         <td r>0.00002%</td>       <td>0</td>                <td>0</td></tr>
+            <tr><td>10</td>     <td>0</td>              <td>0.000%</td>         <td r>0.000001%</td>      <td>0</td>                <td>0</td></tr>
+            <tr><td>11</td>     <td>0</td>              <td>0.000%</td>         <td r>0.00000001%</td>    <td>0</td>                <td>0</td></tr>
+            <tr><td>12</td>     <td>0</td>              <td>0.000%</td>         <td r>0.0000000001%</td>  <td>0</td>                <td>0</td></tr>
+        </table>
+        
+        <h3 id="eyes-per-seed">Total Eyes per Seed</h3>
+        <table>
+            <tr><th>Eyes</th>       <th># of Seeds</th> <th l>Notes</tr></tr>
+            <tr><td>109</td>        <td>1</td>          <td l>Run #5003 / Seed <span data-copy="$">1266989177126700454</span></td></tr>
+            <tr><td>110 - 119</td>  <td>10</td>         <td></td></tr>
+            <tr><td>120 - 129</td>  <td>159</td>        <td></td></tr>
+            <tr><td>130 - 139</td>  <td>880</td>        <td></td></tr>
+            <tr><td>140 - 149</td>  <td>2175</td>       <td></td></tr>
+            <tr><td>150 - 159</td>  <td>2544</td>       <td></td></tr>
+            <tr><td>160 - 169</td>  <td>1673</td>       <td></td></tr>
+            <tr><td>170 - 179</td>  <td>510</td>        <td></td></tr>
+            <tr><td>180 - 189</td>  <td>70</td>         <td></td></tr>
+            <tr><td>194</td>        <td>1</td>          <td l>Run #6771 / Seed <span data-copy="$">-4614904069694821615</span></td></tr>
+        </table>
+        <p>Average eyes per seed is <b>153.6</b></p>
+        <p>Median number of eyes per seed is <b>154</b></p>
+        <p>Mode eye count is <b>160</b>, which happened in <b>278 unique seeds</b></p>
+    </section>
+
+
+
+    <section>
+        <h2 id="high-eyes">High Eye Counts</h2>
+        <p>Every frame in an end portal has a 10% chance of generating with an Eye of Ender already placed. On average, a portal is most likely to generate with one eye pre-placed, with around 92% of portals having three eyes or fewer. The odds of finding a portal with a given eye count can be found in the <a href="#eye-summaries">Eye Summaries</a> table at the top of this page.</p>
+        <p>Across the entire 100K challenge, it is likely the most eyes that will ever generate in a portal is <b>9</b>, with a roughly 87% chance of one existing, but less than 2% chance of Couri visiting one. The most eyes that have generated so far is <b>7</b>, which he has visited once in a run.</p>
+        <p class="disclaimer"><b>The odds of a 12-eye portal occurring in the entire 100K challenge is approximately 1 in 78,128</b>, or in other words Couri would need to play almost 8 billion seeds. A search for 12-eye end portals found <a href="https://github.com/hube12/SSGOutput/releases/tag/1.1">approximately 8.7 million seeds</a>, however this search only included portals in the first stronghold ring. Despite common misconception, it is theoretically possible (albeit extremely unlikely) to randomly generate a world with a 12-eye portal without using a set seed.</p>
+        
+        <h3 id="six-eyes">Six Eye Portals</h3>
+        <p>I've found a total of <b>498</b> six eye portals, across <b>477</b> seeds. Of these, <b>nine</b> were in the first ring.</p>
+        <p>The most six eye portals in one seed so far was <b>3</b>, which happened in <b>1</b> seed.</p>
+        <p class="disclaimer">Nothing in this table has been manually verified.</p>
+        <table>
+            <tr><th>Run #</th>  <th>Seed</th>                   <th>Coordinates</th>                <th>SH Ring</th>    <th l>Notes</th></tr>
+            <tr><td>83</td> <td data-copy="$">-5521708131387409403</td> <td data-copy="/tp $">-14233 29 4</td> <td>5</td> <td></td></tr>
+            <tr><td>83</td> <td data-copy="$">-5521708131387409403</td> <td data-copy="/tp $">13493 39 -2099</td> <td>5</td> <td></td></tr>
+            <tr><td>33</td> <td data-copy="$">-5687119558841592808</td> <td data-copy="/tp $">-2154 19 -1276</td> <td>1</td> <td></td></tr>
+            <tr><td>33</td> <td data-copy="$">-5687119558841592808</td> <td data-copy="/tp $">6116 27 19251</td> <td>7</td> <td></td></tr>
+            <tr><td>35</td> <td data-copy="$">114734697548281618</td> <td data-copy="/tp $">4464 41 13741</td> <td>5</td> <td></td></tr>
+            <tr><td>41</td> <td data-copy="$">-4563612786251123492</td> <td data-copy="/tp $">-4985 19 9959</td> <td>4</td> <td></td></tr>
+            <tr><td>54</td> <td data-copy="$">-7765515219357776918</td> <td data-copy="/tp $">6655 36 -16656</td> <td>6</td> <td></td></tr>
+            <tr><td>77</td> <td data-copy="$">-4292530241709062653</td> <td data-copy="/tp $">8589 37 -10799</td> <td>5</td> <td></td></tr>
+            <tr><td>104</td> <td data-copy="$">8228960471752167013</td> <td data-copy="/tp $">-6024 41 9049</td> <td>4</td> <td></td></tr>
+            <tr><td>166</td> <td data-copy="$">5708812918949141881</td> <td data-copy="/tp $">6022 27 -9506</td> <td>4</td> <td></td></tr>
+            <tr><td>177</td> <td data-copy="$">935698967925242906</td> <td data-copy="/tp $">-14232 35 2576</td> <td>5</td> <td></td></tr>
+            <tr><td>203</td> <td data-copy="$">-8720665472787709768</td> <td data-copy="/tp $">-10718 37 2657</td> <td>4</td> <td></td></tr>
+            <tr><td>272</td> <td data-copy="$">3783361467936677577</td> <td data-copy="/tp $">20026 47 4025</td> <td>7</td> <td></td></tr>
+            <tr><td>277</td> <td data-copy="$">8075394905646884203</td> <td data-copy="/tp $">-7494 20 21808</td> <td>8</td> <td></td></tr>
+            <tr><td>294</td> <td data-copy="$">-1915008230114507272</td> <td data-copy="/tp $">11833 39 20062</td> <td>8</td> <td></td></tr>
+            <tr><td>312</td> <td data-copy="$">-1997597251526260786</td> <td data-copy="/tp $">-5085 37 -5793</td> <td>3</td> <td></td></tr>
+            <tr><td>318</td> <td data-copy="$">7678477073730391519</td> <td data-copy="/tp $">-14587 21 916</td> <td>5</td> <td></td></tr>
+            <tr><td>329</td> <td data-copy="$">-5198290551729628125</td> <td data-copy="/tp $">10959 15 -3734</td> <td>4</td> <td></td></tr>
+            <tr><td>343</td> <td data-copy="$">6147812481640765972</td> <td data-copy="/tp $">15660 17 6296</td> <td>6</td> <td></td></tr>
+            <tr><td>348</td> <td data-copy="$">6683361436796998010</td> <td data-copy="/tp $">16217 37 13122</td> <td>7</td> <td></td></tr>
+            <tr><td>376</td> <td data-copy="$">5787130800861771544</td> <td data-copy="/tp $">12475 18 -16729</td> <td>7</td> <td></td></tr>
+            <tr><td>396</td> <td data-copy="$">527892594110442400</td> <td data-copy="/tp $">3409 17 -20735</td> <td>7</td> <td></td></tr>
+            <tr><td>407</td> <td data-copy="$">-7979693827693683060</td> <td data-copy="/tp $">14501 37 15156</td> <td>7</td> <td></td></tr>
+            <tr><td>425</td> <td data-copy="$">7149115521113951349</td> <td data-copy="/tp $">-6046 36 -13183</td> <td>5</td> <td></td></tr>
+            <tr><td>462</td> <td data-copy="$">7969109511650534361</td> <td data-copy="/tp $">10739 32 17979</td> <td>7</td> <td></td></tr>
+            <tr><td>476</td> <td data-copy="$">3483687320580870807</td> <td data-copy="/tp $">14663 26 1635</td> <td>5</td> <td></td></tr>
+            <tr><td>483</td> <td data-copy="$">6040156914965976795</td> <td data-copy="/tp $">17903 39 15566</td> <td>8</td> <td></td></tr>
+            <tr><td>526</td> <td data-copy="$">-7673174578007666539</td> <td data-copy="/tp $">11641 24 -2442</td> <td>4</td> <td></td></tr>
+            <tr><td>528</td> <td data-copy="$">-4041395955416503409</td> <td data-copy="/tp $">-455 24 -21004</td> <td>7</td> <td></td></tr>
+            <tr><td>533</td> <td data-copy="$">-4941056180332420866</td> <td data-copy="/tp $">21767 15 7085</td> <td>8</td> <td></td></tr>
+            <tr><td>545</td> <td data-copy="$">-9080273032195684253</td> <td data-copy="/tp $">10125 24 -14832</td> <td>6</td> <td></td></tr>
+            <tr><td>566</td> <td data-copy="$">4402774783460681961</td> <td data-copy="/tp $">17298 28 2927</td> <td>6</td> <td></td></tr>
+            <tr><td>604</td> <td data-copy="$">9054847919971644310</td> <td data-copy="/tp $">4159 12 17364</td> <td>6</td> <td></td></tr>
+            <tr><td>640</td> <td data-copy="$">4761796815460188513</td> <td data-copy="/tp $">6586 30 5590</td> <td>3</td> <td></td></tr>
+            <tr><td>647</td> <td data-copy="$">-6078380025932200293</td> <td data-copy="/tp $">-6741 21 8737</td> <td>4</td> <td></td></tr>
+            <tr><td>649</td> <td data-copy="$">6589490768194425332</td> <td data-copy="/tp $">11024 37 -1148</td> <td>4</td> <td></td></tr>
+            <tr><td>654</td> <td data-copy="$">7512665987139355999</td> <td data-copy="/tp $">6325 14 12906</td> <td>5</td> <td></td></tr>
+            <tr><td>693</td> <td data-copy="$">-3748536549659329641</td> <td data-copy="/tp $">-1141 27 -11907</td> <td>4</td> <td></td></tr>
+            <tr><td>714</td> <td data-copy="$">-1065288720362532738</td> <td data-copy="/tp $">6281 35 18940</td> <td>7</td> <td></td></tr>
+            <tr><td>721</td> <td data-copy="$">-8340091987396600015</td> <td data-copy="/tp $">-2133 37 10368</td> <td>4</td> <td></td></tr>
+            <tr><td>764</td> <td data-copy="$">-8931495079392520957</td> <td data-copy="/tp $">19990 27 -4661</td> <td>7</td> <td></td></tr>
+            <tr><td>770</td> <td data-copy="$">-3780441024790808130</td> <td data-copy="/tp $">-157 37 16997</td> <td>6</td> <td></td></tr>
+            <tr><td>793</td> <td data-copy="$">-8374409871120369873</td> <td data-copy="/tp $">-22102 32 6338</td> <td>8</td> <td></td></tr>
+            <tr><td>809</td> <td data-copy="$">-777399277148796618</td> <td data-copy="/tp $">-20753 35 822</td> <td>7</td> <td></td></tr>
+            <tr><td>815</td> <td data-copy="$">5225863936714989999</td> <td data-copy="/tp $">7762 21 22293</td> <td>8</td> <td></td></tr>
+            <tr><td>817</td> <td data-copy="$">6496707916498608744</td> <td data-copy="/tp $">9245 42 -10633</td> <td>5</td> <td></td></tr>
+            <tr><td>825</td> <td data-copy="$">-4979535268469095313</td> <td data-copy="/tp $">3880 36 -23610</td> <td>8</td> <td></td></tr>
+            <tr><td>852</td> <td data-copy="$">4590497017962586280</td> <td data-copy="/tp $">-2138 41 -14652</td> <td>5</td> <td></td></tr>
+            <tr><td>937</td> <td data-copy="$">-5998555160790790097</td> <td data-copy="/tp $">-21267 27 -9758</td> <td>8</td> <td></td></tr>
+            <tr><td>1009</td> <td data-copy="$">3568471918204399575</td> <td data-copy="/tp $">10582 36 4856</td> <td>4</td> <td></td></tr>
+            <tr><td>1014</td> <td data-copy="$">-2225827090274254963</td> <td data-copy="/tp $">10690 34 4439</td> <td>4</td> <td></td></tr>
+            <tr><td>1019</td> <td data-copy="$">3113463282885721084</td> <td data-copy="/tp $">-12808 36 15629</td> <td>7</td> <td></td></tr>
+            <tr><td>1034</td> <td data-copy="$">-5071910092881000237</td> <td data-copy="/tp $">12677 42 -5186</td> <td>5</td> <td></td></tr>
+            <tr><td>1036</td> <td data-copy="$">9183611200996067183</td> <td data-copy="/tp $">-10314 20 17914</td> <td>7</td> <td></td></tr>
+            <tr><td>1040</td> <td data-copy="$">6915879212193265395</td> <td data-copy="/tp $">2412 23 -17838</td> <td>6</td> <td></td></tr>
+            <tr><td>1085</td> <td data-copy="$">6063029683764258183</td> <td data-copy="/tp $">-5471 39 5333</td> <td>3</td> <td></td></tr>
+            <tr><td>1096</td> <td data-copy="$">-7962118025714829036</td> <td data-copy="/tp $">5185 30 -9633</td> <td>4</td> <td></td></tr>
+            <tr><td>1124</td> <td data-copy="$">-1944003446327884436</td> <td data-copy="/tp $">-6127 34 15756</td> <td>6</td> <td></td></tr>
+            <tr><td>1165</td> <td data-copy="$">-1535627084925662256</td> <td data-copy="/tp $">-16826 41 -277</td> <td>6</td> <td></td></tr>
+            <tr><td>1185</td> <td data-copy="$">4072915354590531697</td> <td data-copy="/tp $">20164 35 6041</td> <td>7</td> <td></td></tr>
+            <tr><td>1187</td> <td data-copy="$">7137895635248633321</td> <td data-copy="/tp $">-10837 19 1273</td> <td>4</td> <td></td></tr>
+            <tr><td>1207</td> <td data-copy="$">1328960924930348931</td> <td data-copy="/tp $">-6797 22 12624</td> <td>5</td> <td></td></tr>
+            <tr><td>1217</td> <td data-copy="$">-747330864678117045</td> <td data-copy="/tp $">-9186 35 -10609</td> <td>5</td> <td></td></tr>
+            <tr><td>1219</td> <td data-copy="$">4402613029556381115</td> <td data-copy="/tp $">-20453 25 12879</td> <td>8</td> <td></td></tr>
+            <tr><td>1231</td> <td data-copy="$">2449767761166199826</td> <td data-copy="/tp $">-8817 27 6625</td> <td>4</td> <td></td></tr>
+            <tr><td>1263</td> <td data-copy="$">3624165750287963065</td> <td data-copy="/tp $">-17270 30 -15069</td> <td>8</td> <td></td></tr>
+            <tr><td>1276</td> <td data-copy="$">5144942017055085498</td> <td data-copy="/tp $">14656 21 -8636</td> <td>6</td> <td></td></tr>
+            <tr><td>1283</td> <td data-copy="$">-1054748471827752308</td> <td data-copy="/tp $">22408 12 6719</td> <td>8</td> <td></td></tr>
+            <tr><td>1322</td> <td data-copy="$">-4647242229468290945</td> <td data-copy="/tp $">19201 34 5516</td> <td>7</td> <td></td></tr>
+            <tr><td>1324</td> <td data-copy="$">7805346912371190837</td> <td data-copy="/tp $">-9086 36 18216</td> <td>7</td> <td></td></tr>
+            <tr><td>1351</td> <td data-copy="$">2638105416145826219</td> <td data-copy="/tp $">-4047 25 -10088</td> <td>4</td> <td></td></tr>
+            <tr><td>1427</td> <td data-copy="$">-5722526071647989393</td> <td data-copy="/tp $">-14564 27 2028</td> <td>5</td> <td></td></tr>
+            <tr><td>1475</td> <td data-copy="$">-390378168021012913</td> <td data-copy="/tp $">-10699 38 -4900</td> <td>4</td> <td></td></tr>
+            <tr><td>1492</td> <td data-copy="$">-8897665297318086180</td> <td data-copy="/tp $">-13586 10 -1425</td> <td>5</td> <td></td></tr>
+            <tr><td>1514</td> <td data-copy="$">-314209099922177217</td> <td data-copy="/tp $">-13978 29 3370</td> <td>5</td> <td></td></tr>
+            <tr><td>1524</td> <td data-copy="$">-1448673993472839838</td> <td data-copy="/tp $">-7555 37 8551</td> <td>4</td> <td></td></tr>
+            <tr><td>1544</td> <td data-copy="$">-7235054607713858432</td> <td data-copy="/tp $">20530 39 4276</td> <td>7</td> <td></td></tr>
+            <tr><td>1556</td> <td data-copy="$">8951773243030879966</td> <td data-copy="/tp $">-20675 28 -904</td> <td>7</td> <td></td></tr>
+            <tr><td>1559</td> <td data-copy="$">-2454070603311963845</td> <td data-copy="/tp $">-12484 32 -7677</td> <td>5</td> <td></td></tr>
+            <tr><td>1580</td> <td data-copy="$">1417716906806318718</td> <td data-copy="/tp $">19311 32 -5122</td> <td>7</td> <td></td></tr>
+            <tr><td>1582</td> <td data-copy="$">-4697411195848884496</td> <td data-copy="/tp $">15500 43 -9184</td> <td>6</td> <td></td></tr>
+            <tr><td>1627</td> <td data-copy="$">-1221519162830785119</td> <td data-copy="/tp $">24154 36 -1147</td> <td>8</td> <td></td></tr>
+            <tr><td>1769</td> <td data-copy="$">-6301329958255872496</td> <td data-copy="/tp $">6249 24 18982</td> <td>7</td> <td></td></tr>
+            <tr><td>1770</td> <td data-copy="$">4198725718221702950</td> <td data-copy="/tp $">2245 38 7407</td> <td>3</td> <td></td></tr>
+            <tr><td>1804</td> <td data-copy="$">6128064865036049845</td> <td data-copy="/tp $">3743 28 -10902</td> <td>4</td> <td></td></tr>
+            <tr><td>1817</td> <td data-copy="$">2254967661343422889</td> <td data-copy="/tp $">9263 26 18704</td> <td>7</td> <td></td></tr>
+            <tr><td>1834</td> <td data-copy="$">8854729297447022447</td> <td data-copy="/tp $">18409 35 -13884</td> <td>8</td> <td></td></tr>
+            <tr><td>1844</td> <td data-copy="$">-2250878161296237953</td> <td data-copy="/tp $">9966 26 -17233</td> <td>7</td> <td></td></tr>
+            <tr><td>1854</td> <td data-copy="$">-4566300348915703467</td> <td data-copy="/tp $">6128 27 6073</td> <td>3</td> <td></td></tr>
+            <tr><td>1892</td> <td data-copy="$">-7690167403499278680</td> <td data-copy="/tp $">-6480 30 -3879</td> <td>3</td> <td></td></tr>
+            <tr><td>1925</td> <td data-copy="$">2323612323665584436</td> <td data-copy="/tp $">-9888 34 -14943</td> <td>6</td> <td></td></tr>
+            <tr><td>1935</td> <td data-copy="$">-4773239086695755120</td> <td data-copy="/tp $">2090 39 7527</td> <td>3</td> <td></td></tr>
+            <tr><td>1957</td> <td data-copy="$">203134271636438316</td> <td data-copy="/tp $">402 25 -5195</td> <td>2</td> <td></td></tr>
+            <tr><td>1971</td> <td data-copy="$">5100493753566509522</td> <td data-copy="/tp $">22887 20 -1948</td> <td>8</td> <td></td></tr>
+            <tr><td>1984</td> <td data-copy="$">-2408186641832389179</td> <td data-copy="/tp $">-1364 28 -17936</td> <td>6</td> <td></td></tr>
+            <tr><td>1990</td> <td data-copy="$">647018337178029234</td> <td data-copy="/tp $">4905 23 22385</td> <td>8</td> <td></td></tr>
+            <tr><td>2062</td> <td data-copy="$">8117860922556154454</td> <td data-copy="/tp $">-169 37 19945</td> <td>7</td> <td></td></tr>
+            <tr><td>2067</td> <td data-copy="$">-8570768585032769578</td> <td data-copy="/tp $">1696 37 20606</td> <td>7</td> <td></td></tr>
+            <tr><td>2070</td> <td data-copy="$">3528553856223449793</td> <td data-copy="/tp $">-842 39 -2407</td> <td>1</td> <td></td></tr>
+            <tr><td>2086</td> <td data-copy="$">-8826824549240705488</td> <td data-copy="/tp $">4076 28 2731</td> <td>2</td> <td></td></tr>
+            <tr><td>2101</td> <td data-copy="$">-4520711813740012181</td> <td data-copy="/tp $">-19426 25 -6604</td> <td>7</td> <td></td></tr>
+            <tr><td>2111</td> <td data-copy="$">-4974365808594302855</td> <td data-copy="/tp $">-20853 36 390</td> <td>7</td> <td></td></tr>
+            <tr><td>2114</td> <td data-copy="$">-7333987091931706593</td> <td data-copy="/tp $">6902 28 -3114</td> <td>3</td> <td></td></tr>
+            <tr><td>2131</td> <td data-copy="$">-4892271837311662635</td> <td data-copy="/tp $">-5915 24 16209</td> <td>6</td> <td></td></tr>
+            <tr><td>2138</td> <td data-copy="$">-1423751672013566775</td> <td data-copy="/tp $">-11742 28 13402</td> <td>6</td> <td></td></tr>
+            <tr><td>2159</td> <td data-copy="$">7725436629776509096</td> <td data-copy="/tp $">-12365 18 7482</td> <td>5</td> <td></td></tr>
+            <tr><td>2168</td> <td data-copy="$">-1445255509347135040</td> <td data-copy="/tp $">-14664 35 -2569</td> <td>5</td> <td></td></tr>
+            <tr><td>2190</td> <td data-copy="$">5399463611615153926</td> <td data-copy="/tp $">19156 45 -4935</td> <td>7</td> <td></td></tr>
+            <tr><td>2224</td> <td data-copy="$">7632866924793993353</td> <td data-copy="/tp $">16891 45 10981</td> <td>7</td> <td></td></tr>
+            <tr><td>2226</td> <td data-copy="$">3041972168997044021</td> <td data-copy="/tp $">-2235 31 4721</td> <td>2</td> <td></td></tr>
+            <tr><td>2236</td> <td data-copy="$">-4715348467757886023</td> <td data-copy="/tp $">-1773 31 17626</td> <td>6</td> <td></td></tr>
+            <tr><td>2276</td> <td data-copy="$">-5355278798543503465</td> <td data-copy="/tp $">-15190 26 -13265</td> <td>7</td> <td></td></tr>
+            <tr><td>2292</td> <td data-copy="$">-2076607109330104441</td> <td data-copy="/tp $">-11403 17 8857</td> <td>5</td> <td></td></tr>
+            <tr><td>2300</td> <td data-copy="$">1520589344181329703</td> <td data-copy="/tp $">5834 32 15934</td> <td>6</td> <td></td></tr>
+            <tr><td>2315</td> <td data-copy="$">7409673473685075352</td> <td data-copy="/tp $">16485 19 5026</td> <td>6</td> <td></td></tr>
+            <tr><td>2327</td> <td data-copy="$">7584746453926768777</td> <td data-copy="/tp $">451 15 -8551</td> <td>3</td> <td></td></tr>
+            <tr><td>2332</td> <td data-copy="$">-9133711719778717679</td> <td data-copy="/tp $">2021 42 -5304</td> <td>2</td> <td></td></tr>
+            <tr><td>2336</td> <td data-copy="$">-555423325865937929</td> <td data-copy="/tp $">6530 34 12237</td> <td>5</td> <td></td></tr>
+            <tr><td>2337</td> <td data-copy="$">3263278562323612711</td> <td data-copy="/tp $">-16054 36 -6273</td> <td>6</td> <td></td></tr>
+            <tr><td>2337</td> <td data-copy="$">3263278562323612711</td> <td data-copy="/tp $">9316 39 -14115</td> <td>6</td> <td></td></tr>
+            <tr><td>2352</td> <td data-copy="$">4576064710233691326</td> <td data-copy="/tp $">-6667 30 15479</td> <td>6</td> <td></td></tr>
+            <tr><td>2359</td> <td data-copy="$">-3474997061248281943</td> <td data-copy="/tp $">-18427 42 9714</td> <td>7</td> <td></td></tr>
+            <tr><td>2368</td> <td data-copy="$">-7717693096285469263</td> <td data-copy="/tp $">-18207 27 -9216</td> <td>7</td> <td></td></tr>
+            <tr><td>2380</td> <td data-copy="$">-1823515095677706121</td> <td data-copy="/tp $">7979 32 -2479</td> <td>3</td> <td></td></tr>
+            <tr><td>2387</td> <td data-copy="$">-548804485126837358</td> <td data-copy="/tp $">-20154 35 11382</td> <td>8</td> <td></td></tr>
+            <tr><td>2404</td> <td data-copy="$">-9027911182118980137</td> <td data-copy="/tp $">10737 16 14117</td> <td>6</td> <td></td></tr>
+            <tr><td>2411</td> <td data-copy="$">-4261811460690505699</td> <td data-copy="/tp $">-11431 30 -12876</td> <td>6</td> <td></td></tr>
+            <tr><td>2458</td> <td data-copy="$">-3012596631625810464</td> <td data-copy="/tp $">-4468 28 -13027</td> <td>5</td> <td></td></tr>
+            <tr><td>2459</td> <td data-copy="$">2364477153475087101</td> <td data-copy="/tp $">-8257 32 14810</td> <td>6</td> <td></td></tr>
+            <tr><td>2462</td> <td data-copy="$">-2680389376950108566</td> <td data-copy="/tp $">7830 42 -849</td> <td>3</td> <td></td></tr>
+            <tr><td>2506</td> <td data-copy="$">8903738725761187898</td> <td data-copy="/tp $">13594 21 -15072</td> <td>7</td> <td></td></tr>
+            <tr><td>2542</td> <td data-copy="$">-3270701132210099100</td> <td data-copy="/tp $">-3919 29 10190</td> <td>4</td> <td></td></tr>
+            <tr><td>2562</td> <td data-copy="$">2593414048561494266</td> <td data-copy="/tp $">14235 28 -18293</td> <td>8</td> <td></td></tr>
+            <tr><td>2568</td> <td data-copy="$">-683614253875020471</td> <td data-copy="/tp $">-8718 40 7851</td> <td>4</td> <td></td></tr>
+            <tr><td>2569</td> <td data-copy="$">2329524662271248930</td> <td data-copy="/tp $">-16779 37 -11996</td> <td>7</td> <td></td></tr>
+            <tr><td>2592</td> <td data-copy="$">8631737444799872489</td> <td data-copy="/tp $">19935 35 -6021</td> <td>7</td> <td></td></tr>
+            <tr><td>2600</td> <td data-copy="$">2908491960473761579</td> <td data-copy="/tp $">-19858 33 -744</td> <td>7</td> <td></td></tr>
+            <tr><td>2614</td> <td data-copy="$">3007861153617219517</td> <td data-copy="/tp $">-9390 31 20841</td> <td>8</td> <td></td></tr>
+            <tr><td>2623</td> <td data-copy="$">-6509824063026989951</td> <td data-copy="/tp $">5304 26 13285</td> <td>5</td> <td></td></tr>
+            <tr><td>2635</td> <td data-copy="$">1567052819901004598</td> <td data-copy="/tp $">35 41 13999</td> <td>5</td> <td></td></tr>
+            <tr><td>2730</td> <td data-copy="$">-4725836599434028978</td> <td data-copy="/tp $">14886 31 10248</td> <td>6</td> <td></td></tr>
+            <tr><td>2766</td> <td data-copy="$">-1203219081741190311</td> <td data-copy="/tp $">-8385 36 2483</td> <td>3</td> <td></td></tr>
+            <tr><td>2792</td> <td data-copy="$">-2425083318706557532</td> <td data-copy="/tp $">1746 39 1238</td> <td>1</td> <td></td></tr>
+            <tr><td>2795</td> <td data-copy="$">6490623257011674984</td> <td data-copy="/tp $">17493 15 4883</td> <td>6</td> <td></td></tr>
+            <tr><td>2813</td> <td data-copy="$">4360813874322552788</td> <td data-copy="/tp $">-4273 29 10827</td> <td>4</td> <td></td></tr>
+            <tr><td>2814</td> <td data-copy="$">5729522625776050699</td> <td data-copy="/tp $">5225 34 13577</td> <td>5</td> <td></td></tr>
+            <tr><td>2827</td> <td data-copy="$">5249112117780633306</td> <td data-copy="/tp $">-10605 27 -4769</td> <td>4</td> <td></td></tr>
+            <tr><td>2857</td> <td data-copy="$">4316168632197215594</td> <td data-copy="/tp $">16908 26 -4026</td> <td>6</td> <td></td></tr>
+            <tr><td>2858</td> <td data-copy="$">8274949951221488563</td> <td data-copy="/tp $">-2883 22 -14079</td> <td>5</td> <td></td></tr>
+            <tr><td>2890</td> <td data-copy="$">4254343343243255771</td> <td data-copy="/tp $">14456 39 13892</td> <td>7</td> <td></td></tr>
+            <tr><td>2949</td> <td data-copy="$">-1492422232392551957</td> <td data-copy="/tp $">19281 22 -8185</td> <td>7</td> <td></td></tr>
+            <tr><td>2959</td> <td data-copy="$">-8162069470592168884</td> <td data-copy="/tp $">5872 23 19740</td> <td>7</td> <td></td></tr>
+            <tr><td>2976</td> <td data-copy="$">7859342202270154420</td> <td data-copy="/tp $">3777 25 19844</td> <td>7</td> <td></td></tr>
+            <tr><td>2993</td> <td data-copy="$">-8220123969425489419</td> <td data-copy="/tp $">15278 33 -13469</td> <td>7</td> <td></td></tr>
+            <tr><td>3007</td> <td data-copy="$">-7886384652212612179</td> <td data-copy="/tp $">-21199 27 10922</td> <td>8</td> <td></td></tr>
+            <tr><td>3007</td> <td data-copy="$">-7886384652212612179</td> <td data-copy="/tp $">15934 35 11834</td> <td>7</td> <td></td></tr>
+            <tr><td>3048</td> <td data-copy="$">-4266665949906601311</td> <td data-copy="/tp $">-13941 5 -4496</td> <td>5</td> <td></td></tr>
+            <tr><td>3068</td> <td data-copy="$">3455950646411799162</td> <td data-copy="/tp $">-1768 32 10529</td> <td>4</td> <td></td></tr>
+            <tr><td>3151</td> <td data-copy="$">9148167535671225500</td> <td data-copy="/tp $">-58 20 2426</td> <td>1</td> <td></td></tr>
+            <tr><td>3163</td> <td data-copy="$">-9089091436294845660</td> <td data-copy="/tp $">8773 43 19235</td> <td>7</td> <td></td></tr>
+            <tr><td>3164</td> <td data-copy="$">1307106099138785274</td> <td data-copy="/tp $">13978 33 -1649</td> <td>5</td> <td></td></tr>
+            <tr><td>3171</td> <td data-copy="$">-4624104287685774619</td> <td data-copy="/tp $">-6067 39 -8587</td> <td>4</td> <td></td></tr>
+            <tr><td>3214</td> <td data-copy="$">3891054433088636788</td> <td data-copy="/tp $">-20216 36 1963</td> <td>7</td> <td></td></tr>
+            <tr><td>3238</td> <td data-copy="$">-6399528544166180427</td> <td data-copy="/tp $">-17514 39 -10506</td> <td>7</td> <td></td></tr>
+            <tr><td>3260</td> <td data-copy="$">-301040922717132909</td> <td data-copy="/tp $">-18948 28 -6411</td> <td>7</td> <td></td></tr>
+            <tr><td>3263</td> <td data-copy="$">7728895652524880106</td> <td data-copy="/tp $">19911 13 -12100</td> <td>8</td> <td></td></tr>
+            <tr><td>3284</td> <td data-copy="$">5585521821163302423</td> <td data-copy="/tp $">16591 30 -5088</td> <td>6</td> <td></td></tr>
+            <tr><td>3289</td> <td data-copy="$">2133408069883590269</td> <td data-copy="/tp $">-2249 23 -4377</td> <td>2</td> <td></td></tr>
+            <tr><td>3297</td> <td data-copy="$">3701505123137405528</td> <td data-copy="/tp $">10976 22 10151</td> <td>5</td> <td></td></tr>
+            <tr><td>3302</td> <td data-copy="$">-8080125309276155996</td> <td data-copy="/tp $">-959 35 7546</td> <td>3</td> <td></td></tr>
+            <tr><td>3307</td> <td data-copy="$">-3262753683514301455</td> <td data-copy="/tp $">-9197 35 17795</td> <td>7</td> <td></td></tr>
+            <tr><td>3321</td> <td data-copy="$">426259010967069283</td> <td data-copy="/tp $">-13586 31 -11229</td> <td>6</td> <td></td></tr>
+            <tr><td>3321</td> <td data-copy="$">426259010967069283</td> <td data-copy="/tp $">-4172 33 16461</td> <td>6</td> <td></td></tr>
+            <tr><td>3334</td> <td data-copy="$">2930162550126736686</td> <td data-copy="/tp $">-14368 26 9970</td> <td>6</td> <td></td></tr>
+            <tr><td>3341</td> <td data-copy="$">2026496297960202863</td> <td data-copy="/tp $">22973 36 3149</td> <td>8</td> <td></td></tr>
+            <tr><td>3384</td> <td data-copy="$">8729672976540512757</td> <td data-copy="/tp $">8977 34 -11402</td> <td>5</td> <td></td></tr>
+            <tr><td>3387</td> <td data-copy="$">-5502297123425843426</td> <td data-copy="/tp $">-4016 21 14185</td> <td>5</td> <td></td></tr>
+            <tr><td>3393</td> <td data-copy="$">4593118688840313535</td> <td data-copy="/tp $">-8335 34 -471</td> <td>3</td> <td></td></tr>
+            <tr><td>3412</td> <td data-copy="$">-4148062232943767788</td> <td data-copy="/tp $">-14454 14 -15227</td> <td>7</td> <td></td></tr>
+            <tr><td>3416</td> <td data-copy="$">-4312503735278463293</td> <td data-copy="/tp $">11415 31 -2556</td> <td>4</td> <td></td></tr>
+            <tr><td>3420</td> <td data-copy="$">6816462865336987921</td> <td data-copy="/tp $">-7444 37 22545</td> <td>8</td> <td></td></tr>
+            <tr><td>3444</td> <td data-copy="$">5519472890236096484</td> <td data-copy="/tp $">18778 23 14804</td> <td>8</td> <td></td></tr>
+            <tr><td>3449</td> <td data-copy="$">-4087407011228082399</td> <td data-copy="/tp $">1954 20 4872</td> <td>2</td> <td></td></tr>
+            <tr><td>3459</td> <td data-copy="$">2708349586504284831</td> <td data-copy="/tp $">693 25 20746</td> <td>7</td> <td></td></tr>
+            <tr><td>3460</td> <td data-copy="$">1966550780344785338</td> <td data-copy="/tp $">-8202 32 6779</td> <td>4</td> <td></td></tr>
+            <tr><td>3463</td> <td data-copy="$">2324027813117788314</td> <td data-copy="/tp $">-10909 21 -1162</td> <td>4</td> <td></td></tr>
+            <tr><td>3474</td> <td data-copy="$">-1155185499740186301</td> <td data-copy="/tp $">-11596 39 -13724</td> <td>6</td> <td></td></tr>
+            <tr><td>3508</td> <td data-copy="$">-9181595857563675043</td> <td data-copy="/tp $">21068 33 11866</td> <td>8</td> <td></td></tr>
+            <tr><td>3549</td> <td data-copy="$">5304839680466345614</td> <td data-copy="/tp $">-9223 33 -18200</td> <td>7</td> <td></td></tr>
+            <tr><td>3554</td> <td data-copy="$">-2718336787465827340</td> <td data-copy="/tp $">9020 9 18711</td> <td>7</td> <td></td></tr>
+            <tr><td>3556</td> <td data-copy="$">1761196571177326383</td> <td data-copy="/tp $">16668 30 16618</td> <td>8</td> <td></td></tr>
+            <tr><td>3558</td> <td data-copy="$">6392669360814989022</td> <td data-copy="/tp $">3120 43 -4276</td> <td>2</td> <td></td></tr>
+            <tr><td>3566</td> <td data-copy="$">2625975464966268132</td> <td data-copy="/tp $">-13155 18 4954</td> <td>5</td> <td></td></tr>
+            <tr><td>3567</td> <td data-copy="$">5559302499329638999</td> <td data-copy="/tp $">19719 43 -6502</td> <td>7</td> <td></td></tr>
+            <tr><td>3587</td> <td data-copy="$">-1412773172989985666</td> <td data-copy="/tp $">5204 34 13592</td> <td>5</td> <td></td></tr>
+            <tr><td>3627</td> <td data-copy="$">2107954719262530276</td> <td data-copy="/tp $">10293 30 8905</td> <td>5</td> <td></td></tr>
+            <tr><td>3687</td> <td data-copy="$">-8976235661968514842</td> <td data-copy="/tp $">-2618 21 8303</td> <td>3</td> <td></td></tr>
+            <tr><td>3687</td> <td data-copy="$">-8976235661968514842</td> <td data-copy="/tp $">2795 30 8214</td> <td>3</td> <td></td></tr>
+            <tr><td>3695</td> <td data-copy="$">-2288216356697496740</td> <td data-copy="/tp $">-22391 39 -8523</td> <td>8</td> <td></td></tr>
+            <tr><td>3714</td> <td data-copy="$">3964103481999482881</td> <td data-copy="/tp $">-5351 35 -1097</td> <td>2</td> <td></td></tr>
+            <tr><td>3723</td> <td data-copy="$">3958158415426925891</td> <td data-copy="/tp $">-16883 26 631</td> <td>6</td> <td></td></tr>
+            <tr><td>3746</td> <td data-copy="$">5358868955863515151</td> <td data-copy="/tp $">-19974 41 715</td> <td>7</td> <td></td></tr>
+            <tr><td>3757</td> <td data-copy="$">8521454244668301705</td> <td data-copy="/tp $">6760 27 -9095</td> <td>4</td> <td></td></tr>
+            <tr><td>3763</td> <td data-copy="$">-4357662312570254510</td> <td data-copy="/tp $">5214 27 -10599</td> <td>4</td> <td></td></tr>
+            <tr><td>3787</td> <td data-copy="$">-9145062238909675796</td> <td data-copy="/tp $">-16556 30 4528</td> <td>6</td> <td></td></tr>
+            <tr><td>3791</td> <td data-copy="$">549754818729604582</td> <td data-copy="/tp $">5289 25 -6013</td> <td>3</td> <td></td></tr>
+            <tr><td>3827</td> <td data-copy="$">5579991416272126484</td> <td data-copy="/tp $">-993 25 14147</td> <td>5</td> <td></td></tr>
+            <tr><td>3837</td> <td data-copy="$">4595334978189440222</td> <td data-copy="/tp $">7359 29 16193</td> <td>6</td> <td></td></tr>
+            <tr><td>3842</td> <td data-copy="$">5489723862799456380</td> <td data-copy="/tp $">-15211 38 -8810</td> <td>6</td> <td></td></tr>
+            <tr><td>3846</td> <td data-copy="$">-5547001771967489900</td> <td data-copy="/tp $">10638 12 -17547</td> <td>7</td> <td></td></tr>
+            <tr><td>3875</td> <td data-copy="$">2082257674897667074</td> <td data-copy="/tp $">-2896 34 4357</td> <td>2</td> <td></td></tr>
+            <tr><td>3877</td> <td data-copy="$">-409727668448614387</td> <td data-copy="/tp $">613 32 -7986</td> <td>3</td> <td></td></tr>
+            <tr><td>3897</td> <td data-copy="$">-6431344603623907404</td> <td data-copy="/tp $">4339 17 -3511</td> <td>2</td> <td></td></tr>
+            <tr><td>3902</td> <td data-copy="$">4062043242198628104</td> <td data-copy="/tp $">-11137 34 17682</td> <td>7</td> <td></td></tr>
+            <tr><td>3906</td> <td data-copy="$">-6905506288829524947</td> <td data-copy="/tp $">8181 47 15137</td> <td>6</td> <td></td></tr>
+            <tr><td>3908</td> <td data-copy="$">-6142468751017823616</td> <td data-copy="/tp $">1702 26 -17314</td> <td>6</td> <td></td></tr>
+            <tr><td>3918</td> <td data-copy="$">6264514874453305281</td> <td data-copy="/tp $">-18711 33 -7194</td> <td>7</td> <td></td></tr>
+            <tr><td>3975</td> <td data-copy="$">-2255293516406495865</td> <td data-copy="/tp $">-13577 28 -10616</td> <td>6</td> <td></td></tr>
+            <tr><td>3986</td> <td data-copy="$">638230376137851226</td> <td data-copy="/tp $">-6463 35 -22537</td> <td>8</td> <td></td></tr>
+            <tr><td>3996</td> <td data-copy="$">177124095238932131</td> <td data-copy="/tp $">-10861 40 -21505</td> <td>8</td> <td></td></tr>
+            <tr><td>3998</td> <td data-copy="$">7354828425522694155</td> <td data-copy="/tp $">7468 41 11708</td> <td>5</td> <td></td></tr>
+            <tr><td>4049</td> <td data-copy="$">5817441874394432725</td> <td data-copy="/tp $">-10370 36 3825</td> <td>4</td> <td></td></tr>
+            <tr><td>4072</td> <td data-copy="$">-4127847314794485102</td> <td data-copy="/tp $">-19765 33 -4628</td> <td>7</td> <td></td></tr>
+            <tr><td>4094</td> <td data-copy="$">4729440235646027250</td> <td data-copy="/tp $">-4704 23 -10522</td> <td>4</td> <td></td></tr>
+            <tr><td>4104</td> <td data-copy="$">-4710575653738236866</td> <td data-copy="/tp $">-7994 42 7262</td> <td>4</td> <td></td></tr>
+            <tr><td>4108</td> <td data-copy="$">5271600954788874460</td> <td data-copy="/tp $">18255 34 -10269</td> <td>7</td> <td></td></tr>
+            <tr><td>4110</td> <td data-copy="$">7588935273296730963</td> <td data-copy="/tp $">-18074 24 10967</td> <td>7</td> <td></td></tr>
+            <tr><td>4111</td> <td data-copy="$">-5866295833236604255</td> <td data-copy="/tp $">-8726 20 -14555</td> <td>6</td> <td></td></tr>
+            <tr><td>4111</td> <td data-copy="$">-5866295833236604255</td> <td data-copy="/tp $">2458 37 14501</td> <td>5</td> <td></td></tr>
+            <tr><td>4129</td> <td data-copy="$">-1097780889244003728</td> <td data-copy="/tp $">-1901 32 4699</td> <td>2</td> <td l class="positive">This was found during the run</td></tr>
+            <tr><td>4134</td> <td data-copy="$">-5900208920098338852</td> <td data-copy="/tp $">61 29 -2280</td> <td>1</td> <td></td></tr>
+            <tr><td>4140</td> <td data-copy="$">-3631353787753690060</td> <td data-copy="/tp $">-13884 24 -2010</td> <td>5</td> <td></td></tr>
+            <tr><td>4142</td> <td data-copy="$">-2945911561381305488</td> <td data-copy="/tp $">-8143 31 -22374</td> <td>8</td> <td></td></tr>
+            <tr><td>4161</td> <td data-copy="$">6263396937952946903</td> <td data-copy="/tp $">-14218 21 -10766</td> <td>6</td> <td></td></tr>
+            <tr><td>4186</td> <td data-copy="$">3533220597301100846</td> <td data-copy="/tp $">510 34 -11317</td> <td>4</td> <td></td></tr>
+            <tr><td>4189</td> <td data-copy="$">-7775135047793276177</td> <td data-copy="/tp $">-1711 32 8112</td> <td>3</td> <td></td></tr>
+            <tr><td>4219</td> <td data-copy="$">2199961344578540651</td> <td data-copy="/tp $">6851 33 3995</td> <td>3</td> <td></td></tr>
+            <tr><td>4264</td> <td data-copy="$">5402424999730883543</td> <td data-copy="/tp $">19171 27 7739</td> <td>7</td> <td></td></tr>
+            <tr><td>4301</td> <td data-copy="$">-5984843544893911821</td> <td data-copy="/tp $">-19185 12 7692</td> <td>7</td> <td></td></tr>
+            <tr><td>4336</td> <td data-copy="$">-2490621256663410319</td> <td data-copy="/tp $">-9091 29 15358</td> <td>6</td> <td></td></tr>
+            <tr><td>4372</td> <td data-copy="$">-7579696577144933015</td> <td data-copy="/tp $">18604 33 8075</td> <td>7</td> <td></td></tr>
+            <tr><td>4373</td> <td data-copy="$">-9038728057170990526</td> <td data-copy="/tp $">5497 18 1609</td> <td>2</td> <td></td></tr>
+            <tr><td>4381</td> <td data-copy="$">-2098961638402971096</td> <td data-copy="/tp $">13027 35 -4400</td> <td>5</td> <td></td></tr>
+            <tr><td>4395</td> <td data-copy="$">-123980463358287268</td> <td data-copy="/tp $">10235 35 -13539</td> <td>6</td> <td></td></tr>
+            <tr><td>4405</td> <td data-copy="$">-1373632882911931618</td> <td data-copy="/tp $">14362 27 2831</td> <td>5</td> <td></td></tr>
+            <tr><td>4427</td> <td data-copy="$">-2807706346120196986</td> <td data-copy="/tp $">-7016 18 -4148</td> <td>3</td> <td></td></tr>
+            <tr><td>4439</td> <td data-copy="$">-6882795541284954727</td> <td data-copy="/tp $">-11799 29 7607</td> <td>5</td> <td></td></tr>
+            <tr><td>4453</td> <td data-copy="$">4423321057337425916</td> <td data-copy="/tp $">14692 39 -14458</td> <td>7</td> <td></td></tr>
+            <tr><td>4455</td> <td data-copy="$">-646075037600178545</td> <td data-copy="/tp $">-804 32 -7857</td> <td>3</td> <td></td></tr>
+            <tr><td>4495</td> <td data-copy="$">-5400704241563748291</td> <td data-copy="/tp $">-7687 25 -18376</td> <td>7</td> <td></td></tr>
+            <tr><td>4512</td> <td data-copy="$">-6745863117952113985</td> <td data-copy="/tp $">-7782 23 1377</td> <td>3</td> <td></td></tr>
+            <tr><td>4513</td> <td data-copy="$">-61223192964415542</td> <td data-copy="/tp $">-19825 37 5277</td> <td>7</td> <td></td></tr>
+            <tr><td>4515</td> <td data-copy="$">-899314243136758526</td> <td data-copy="/tp $">4852 24 5923</td> <td>3</td> <td></td></tr>
+            <tr><td>4542</td> <td data-copy="$">-5904956852856487706</td> <td data-copy="/tp $">1024 22 -11052</td> <td>4</td> <td></td></tr>
+            <tr><td>4567</td> <td data-copy="$">2536541823742737540</td> <td data-copy="/tp $">-23116 20 6450</td> <td>8</td> <td></td></tr>
+            <tr><td>4573</td> <td data-copy="$">-2696185292646606603</td> <td data-copy="/tp $">-17196 27 -350</td> <td>6</td> <td></td></tr>
+            <tr><td>4576</td> <td data-copy="$">5006217959177703076</td> <td data-copy="/tp $">20670 41 -4168</td> <td>7</td> <td></td></tr>
+            <tr><td>4642</td> <td data-copy="$">-2491138035640330719</td> <td data-copy="/tp $">-1253 35 -1236</td> <td>1</td> <td></td></tr>
+            <tr><td>4658</td> <td data-copy="$">5906941115923336803</td> <td data-copy="/tp $">232 44 -11423</td> <td>4</td> <td></td></tr>
+            <tr><td>4698</td> <td data-copy="$">-2273010519830468920</td> <td data-copy="/tp $">11974 32 -8785</td> <td>5</td> <td></td></tr>
+            <tr><td>4703</td> <td data-copy="$">6350602224792875869</td> <td data-copy="/tp $">-13692 40 -14511</td> <td>7</td> <td></td></tr>
+            <tr><td>4712</td> <td data-copy="$">-8836431199800207507</td> <td data-copy="/tp $">-15884 38 -12252</td> <td>7</td> <td></td></tr>
+            <tr><td>4750</td> <td data-copy="$">9110520745529915683</td> <td data-copy="/tp $">17530 35 -11696</td> <td>7</td> <td></td></tr>
+            <tr><td>4765</td> <td data-copy="$">-1090019233154958710</td> <td data-copy="/tp $">-665 37 -20679</td> <td>7</td> <td></td></tr>
+            <tr><td>4776</td> <td data-copy="$">7563872151896129782</td> <td data-copy="/tp $">-3158 40 -16980</td> <td>6</td> <td></td></tr>
+            <tr><td>4797</td> <td data-copy="$">8310645007660616693</td> <td data-copy="/tp $">-8507 35 -1300</td> <td>3</td> <td></td></tr>
+            <tr><td>4803</td> <td data-copy="$">9147338070729290479</td> <td data-copy="/tp $">3984 28 2783</td> <td>2</td> <td></td></tr>
+            <tr><td>4836</td> <td data-copy="$">47675762563460407</td> <td data-copy="/tp $">9081 9 -18720</td> <td>7</td> <td></td></tr>
+            <tr><td>4848</td> <td data-copy="$">-6162789913251337479</td> <td data-copy="/tp $">-8202 35 18352</td> <td>7</td> <td></td></tr>
+            <tr><td>4849</td> <td data-copy="$">3000741273020281437</td> <td data-copy="/tp $">9101 19 5908</td> <td>4</td> <td></td></tr>
+            <tr><td>4856</td> <td data-copy="$">-7424902061255759275</td> <td data-copy="/tp $">8275 21 7412</td> <td>4</td> <td></td></tr>
+            <tr><td>4857</td> <td data-copy="$">-1520730796258425758</td> <td data-copy="/tp $">13940 28 9547</td> <td>6</td> <td></td></tr>
+            <tr><td>4901</td> <td data-copy="$">-1372236510206641592</td> <td data-copy="/tp $">-17586 30 -1814</td> <td>6</td> <td></td></tr>
+            <tr><td>4933</td> <td data-copy="$">5019056940398520288</td> <td data-copy="/tp $">16516 29 -11630</td> <td>7</td> <td></td></tr>
+            <tr><td>4937</td> <td data-copy="$">8208669734385414744</td> <td data-copy="/tp $">18100 33 1629</td> <td>6</td> <td></td></tr>
+            <tr><td>4942</td> <td data-copy="$">7044373525466711320</td> <td data-copy="/tp $">7718 36 12546</td> <td>5</td> <td></td></tr>
+            <tr><td>4947</td> <td data-copy="$">-4173170882505583979</td> <td data-copy="/tp $">-11680 5 16722</td> <td>7</td> <td></td></tr>
+            <tr><td>4955</td> <td data-copy="$">1679736823579326138</td> <td data-copy="/tp $">5145 31 -601</td> <td>2</td> <td></td></tr>
+            <tr><td>4971</td> <td data-copy="$">7265379319047200302</td> <td data-copy="/tp $">16669 35 -4059</td> <td>6</td> <td></td></tr>
+            <tr><td>4974</td> <td data-copy="$">9157138966470508811</td> <td data-copy="/tp $">19799 34 2540</td> <td>7</td> <td></td></tr>
+            <tr><td>5005</td> <td data-copy="$">2333627676839709242</td> <td data-copy="/tp $">20720 32 179</td> <td>7</td> <td></td></tr>
+            <tr><td>5015</td> <td data-copy="$">2772604762319527122</td> <td data-copy="/tp $">20805 37 377</td> <td>7</td> <td></td></tr>
+            <tr><td>5018</td> <td data-copy="$">8196359617897276466</td> <td data-copy="/tp $">-12517 41 16356</td> <td>7</td> <td></td></tr>
+            <tr><td>5027</td> <td data-copy="$">3518129429821018011</td> <td data-copy="/tp $">15924 35 7067</td> <td>6</td> <td></td></tr>
+            <tr><td>5061</td> <td data-copy="$">-6143170922475430245</td> <td data-copy="/tp $">-3367 39 19991</td> <td>7</td> <td></td></tr>
+            <tr><td>5068</td> <td data-copy="$">-993570857229730838</td> <td data-copy="/tp $">20497 11 -4350</td> <td>7</td> <td></td></tr>
+            <tr><td>5076</td> <td data-copy="$">1190961440814039767</td> <td data-copy="/tp $">12971 23 -5820</td> <td>5</td> <td></td></tr>
+            <tr><td>5094</td> <td data-copy="$">5870845818979228249</td> <td data-copy="/tp $">-5383 30 10332</td> <td>4</td> <td></td></tr>
+            <tr><td>5117</td> <td data-copy="$">4544855726094605802</td> <td data-copy="/tp $">4816 42 -20363</td> <td>7</td> <td></td></tr>
+            <tr><td>5130</td> <td data-copy="$">-7219122470624419636</td> <td data-copy="/tp $">-5195 34 1156</td> <td>2</td> <td></td></tr>
+            <tr><td>5131</td> <td data-copy="$">-4701549926145149857</td> <td data-copy="/tp $">10954 33 12590</td> <td>6</td> <td></td></tr>
+            <tr><td>5134</td> <td data-copy="$">-8899250605421481902</td> <td data-copy="/tp $">9289 32 -5597</td> <td>4</td> <td></td></tr>
+            <tr><td>5139</td> <td data-copy="$">-8048380737650714774</td> <td data-copy="/tp $">6595 34 5850</td> <td>3</td> <td></td></tr>
+            <tr><td>5157</td> <td data-copy="$">-5235556076537117677</td> <td data-copy="/tp $">20750 22 -991</td> <td>7</td> <td></td></tr>
+            <tr><td>5175</td> <td data-copy="$">-3820635108011083567</td> <td data-copy="/tp $">-13865 29 -14776</td> <td>7</td> <td></td></tr>
+            <tr><td>5192</td> <td data-copy="$">7467169780266299033</td> <td data-copy="/tp $">-3106 20 11577</td> <td>4</td> <td></td></tr>
+            <tr><td>5194</td> <td data-copy="$">605930399609325680</td> <td data-copy="/tp $">-59 31 14933</td> <td>5</td> <td></td></tr>
+            <tr><td>5213</td> <td data-copy="$">-4161497214344646658</td> <td data-copy="/tp $">1756 32 -5289</td> <td>2</td> <td></td></tr>
+            <tr><td>5229</td> <td data-copy="$">3622639707452239367</td> <td data-copy="/tp $">-17727 28 -10657</td> <td>7</td> <td></td></tr>
+            <tr><td>5246</td> <td data-copy="$">4723228145897505282</td> <td data-copy="/tp $">2252 33 -14797</td> <td>5</td> <td></td></tr>
+            <tr><td>5268</td> <td data-copy="$">8140684042517542125</td> <td data-copy="/tp $">14432 18 -18183</td> <td>8</td> <td></td></tr>
+            <tr><td>5285</td> <td data-copy="$">5934320358918921794</td> <td data-copy="/tp $">789 32 7635</td> <td>3</td> <td></td></tr>
+            <tr><td>5311</td> <td data-copy="$">934067867887416908</td> <td data-copy="/tp $">1729 37 13797</td> <td>5</td> <td></td></tr>
+            <tr><td>5328</td> <td data-copy="$">-492622856019872175</td> <td data-copy="/tp $">-10315 34 17032</td> <td>7</td> <td></td></tr>
+            <tr><td>5378</td> <td data-copy="$">-2618023457004143681</td> <td data-copy="/tp $">6130 28 -16982</td> <td>6</td> <td></td></tr>
+            <tr><td>5431</td> <td data-copy="$">5958987892412756779</td> <td data-copy="/tp $">-5690 25 -19377</td> <td>7</td> <td></td></tr>
+            <tr><td>5438</td> <td data-copy="$">2491042750289291464</td> <td data-copy="/tp $">-11769 39 -382</td> <td>4</td> <td></td></tr>
+            <tr><td>5443</td> <td data-copy="$">1564784463638514776</td> <td data-copy="/tp $">-4886 30 -19314</td> <td>7</td> <td></td></tr>
+            <tr><td>5460</td> <td data-copy="$">-8839332212440010246</td> <td data-copy="/tp $">23082 26 -437</td> <td>8</td> <td></td></tr>
+            <tr><td>5461</td> <td data-copy="$">1431682615349816871</td> <td data-copy="/tp $">-9372 100 -14524</td> <td>6</td> <td></td></tr>
+            <tr><td>5466</td> <td data-copy="$">-5843024495148427421</td> <td data-copy="/tp $">20170 27 5444</td> <td>7</td> <td></td></tr>
+            <tr><td>5491</td> <td data-copy="$">-8346289005380258612</td> <td data-copy="/tp $">-3313 21 20674</td> <td>7</td> <td></td></tr>
+            <tr><td>5511</td> <td data-copy="$">-588655812531668138</td> <td data-copy="/tp $">-10972 23 -17264</td> <td>7</td> <td></td></tr>
+            <tr><td>5540</td> <td data-copy="$">6680297114323486079</td> <td data-copy="/tp $">-16266 21 -6343</td> <td>6</td> <td></td></tr>
+            <tr><td>5542</td> <td data-copy="$">-5394333348246355839</td> <td data-copy="/tp $">-7343 41 11900</td> <td>5</td> <td></td></tr>
+            <tr><td>5555</td> <td data-copy="$">6027386006421786521</td> <td data-copy="/tp $">-13120 25 -10903</td> <td>6</td> <td></td></tr>
+            <tr><td>5580</td> <td data-copy="$">3291007008813149243</td> <td data-copy="/tp $">-4427 16 -2700</td> <td>2</td> <td l class="positive">This was found during the run</td></tr>
+            <tr><td>5586</td> <td data-copy="$">-3581049563596713690</td> <td data-copy="/tp $">10031 21 4553</td> <td>4</td> <td></td></tr>
+            <tr><td>5627</td> <td data-copy="$">2263803955476853172</td> <td data-copy="/tp $">-13033 9 -15254</td> <td>7</td> <td></td></tr>
+            <tr><td>5678</td> <td data-copy="$">-8299839803597140416</td> <td data-copy="/tp $">5036 31 19396</td> <td>7</td> <td></td></tr>
+            <tr><td>5697</td> <td data-copy="$">2376605964841545793</td> <td data-copy="/tp $">-17785 30 -1854</td> <td>6</td> <td></td></tr>
+            <tr><td>5725</td> <td data-copy="$">2565453052628031965</td> <td data-copy="/tp $">12258 29 -7833</td> <td>5</td> <td></td></tr>
+            <tr><td>5728</td> <td data-copy="$">8357743496100278817</td> <td data-copy="/tp $">3395 41 20778</td> <td>7</td> <td></td></tr>
+            <tr><td>5729</td> <td data-copy="$">8186401041341996870</td> <td data-copy="/tp $">-4140 44 7207</td> <td>3</td> <td></td></tr>
+            <tr><td>5758</td> <td data-copy="$">-4679270698110080196</td> <td data-copy="/tp $">13426 32 -16183</td> <td>7</td> <td></td></tr>
+            <tr><td>5764</td> <td data-copy="$">-8939302470584947467</td> <td data-copy="/tp $">6679 36 4499</td> <td>3</td> <td></td></tr>
+            <tr><td>5791</td> <td data-copy="$">-4610517936114699863</td> <td data-copy="/tp $">-8458 32 18716</td> <td>7</td> <td></td></tr>
+            <tr><td>5799</td> <td data-copy="$">50595410288012302</td> <td data-copy="/tp $">10040 31 18056</td> <td>7</td> <td></td></tr>
+            <tr><td>5807</td> <td data-copy="$">-6923384629664744102</td> <td data-copy="/tp $">-7954 17 2023</td> <td>3</td> <td></td></tr>
+            <tr><td>5811</td> <td data-copy="$">-2106904985957147437</td> <td data-copy="/tp $">-3400 27 -14097</td> <td>5</td> <td></td></tr>
+            <tr><td>5812</td> <td data-copy="$">-4011455140775481077</td> <td data-copy="/tp $">10241 47 10495</td> <td>5</td> <td></td></tr>
+            <tr><td>5819</td> <td data-copy="$">-289099066770032310</td> <td data-copy="/tp $">-4826 41 17222</td> <td>6</td> <td></td></tr>
+            <tr><td>5829</td> <td data-copy="$">4744214801243440353</td> <td data-copy="/tp $">5384 10 22381</td> <td>8</td> <td></td></tr>
+            <tr><td>5846</td> <td data-copy="$">-8432324605268184681</td> <td data-copy="/tp $">3017 39 -14245</td> <td>5</td> <td></td></tr>
+            <tr><td>5875</td> <td data-copy="$">-7701750495318539148</td> <td data-copy="/tp $">8120 26 22190</td> <td>8</td> <td></td></tr>
+            <tr><td>5880</td> <td data-copy="$">4438772911347988294</td> <td data-copy="/tp $">-9021 36 18703</td> <td>7</td> <td></td></tr>
+            <tr><td>5886</td> <td data-copy="$">2876301081016092071</td> <td data-copy="/tp $">16547 33 -16188</td> <td>8</td> <td></td></tr>
+            <tr><td>5903</td> <td data-copy="$">2762663016091990064</td> <td data-copy="/tp $">9022 20 14389</td> <td>6</td> <td></td></tr>
+            <tr><td>5923</td> <td data-copy="$">-4684262820619948549</td> <td data-copy="/tp $">-2209 25 10552</td> <td>4</td> <td></td></tr>
+            <tr><td>5944</td> <td data-copy="$">6240036611612771675</td> <td data-copy="/tp $">-12759 19 -12677</td> <td>6</td> <td></td></tr>
+            <tr><td>5967</td> <td data-copy="$">4971242942765522209</td> <td data-copy="/tp $">17738 31 -15484</td> <td>8</td> <td></td></tr>
+            <tr><td>5985</td> <td data-copy="$">-5357204017820338660</td> <td data-copy="/tp $">9643 24 -6562</td> <td>4</td> <td></td></tr>
+            <tr><td>5997</td> <td data-copy="$">2953114672461783889</td> <td data-copy="/tp $">15602 21 -14181</td> <td>7</td> <td></td></tr>
+            <tr><td>5998</td> <td data-copy="$">-5532199135021377631</td> <td data-copy="/tp $">16042 30 -12541</td> <td>7</td> <td></td></tr>
+            <tr><td>6014</td> <td data-copy="$">8761660587700592755</td> <td data-copy="/tp $">-16074 33 12860</td> <td>7</td> <td></td></tr>
+            <tr><td>6051</td> <td data-copy="$">-3553378013204353735</td> <td data-copy="/tp $">9308 35 -5660</td> <td>4</td> <td></td></tr>
+            <tr><td>6077</td> <td data-copy="$">-427382143533352980</td> <td data-copy="/tp $">12211 25 -17058</td> <td>7</td> <td></td></tr>
+            <tr><td>6089</td> <td data-copy="$">-2471261207506035351</td> <td data-copy="/tp $">-5754 29 -12644</td> <td>5</td> <td></td></tr>
+            <tr><td>6102</td> <td data-copy="$">-6434161958896616927</td> <td data-copy="/tp $">-14838 42 13153</td> <td>7</td> <td></td></tr>
+            <tr><td>6117</td> <td data-copy="$">8992285196802419031</td> <td data-copy="/tp $">7177 33 -4629</td> <td>3</td> <td></td></tr>
+            <tr><td>6124</td> <td data-copy="$">4066804843666093615</td> <td data-copy="/tp $">14165 23 10702</td> <td>6</td> <td></td></tr>
+            <tr><td>6139</td> <td data-copy="$">-5544642062319523205</td> <td data-copy="/tp $">24006 22 -2066</td> <td>8</td> <td></td></tr>
+            <tr><td>6158</td> <td data-copy="$">4384154834029786178</td> <td data-copy="/tp $">-14078 16 950</td> <td>5</td> <td></td></tr>
+            <tr><td>6161</td> <td data-copy="$">-1849644518022347870</td> <td data-copy="/tp $">-6380 38 5822</td> <td>3</td> <td></td></tr>
+            <tr><td>6203</td> <td data-copy="$">7296828462457940220</td> <td data-copy="/tp $">6027 42 -9582</td> <td>4</td> <td></td></tr>
+            <tr><td>6207</td> <td data-copy="$">525666230028986973</td> <td data-copy="/tp $">-13866 24 9785</td> <td>6</td> <td></td></tr>
+            <tr><td>6275</td> <td data-copy="$">-4845476763351181963</td> <td data-copy="/tp $">-3319 35 13877</td> <td>5</td> <td></td></tr>
+            <tr><td>6284</td> <td data-copy="$">-6019000421415695411</td> <td data-copy="/tp $">-20569 31 -1087</td> <td>7</td> <td></td></tr>
+            <tr><td>6304</td> <td data-copy="$">3004978957629985926</td> <td data-copy="/tp $">9084 30 6061</td> <td>4</td> <td></td></tr>
+            <tr><td>6308</td> <td data-copy="$">-764065685551932582</td> <td data-copy="/tp $">-5528 43 -10189</td> <td>4</td> <td></td></tr>
+            <tr><td>6319</td> <td data-copy="$">4431095016842579212</td> <td data-copy="/tp $">-16887 28 10497</td> <td>7</td> <td></td></tr>
+            <tr><td>6326</td> <td data-copy="$">2904509307775705876</td> <td data-copy="/tp $">-10180 15 17857</td> <td>7</td> <td></td></tr>
+            <tr><td>6337</td> <td data-copy="$">2253008503696986003</td> <td data-copy="/tp $">19247 35 -7370</td> <td>7</td> <td></td></tr>
+            <tr><td>6343</td> <td data-copy="$">8023860034227108917</td> <td data-copy="/tp $">8526 29 7150</td> <td>4</td> <td></td></tr>
+            <tr><td>6459</td> <td data-copy="$">-5159246628931437638</td> <td data-copy="/tp $">15912 38 6808</td> <td>6</td> <td></td></tr>
+            <tr><td>6467</td> <td data-copy="$">-7334265821350534505</td> <td data-copy="/tp $">-2611 32 -7538</td> <td>3</td> <td></td></tr>
+            <tr><td>6472</td> <td data-copy="$">7477697036025268187</td> <td data-copy="/tp $">1959 44 -20126</td> <td>7</td> <td></td></tr>
+            <tr><td>6478</td> <td data-copy="$">6631151806198202575</td> <td data-copy="/tp $">13665 31 -3365</td> <td>5</td> <td></td></tr>
+            <tr><td>6491</td> <td data-copy="$">-2954629413207893115</td> <td data-copy="/tp $">10869 41 -4628</td> <td>4</td> <td></td></tr>
+            <tr><td>6493</td> <td data-copy="$">1337767840742482660</td> <td data-copy="/tp $">-14697 41 15194</td> <td>7</td> <td></td></tr>
+            <tr><td>6503</td> <td data-copy="$">-3263972916254322288</td> <td data-copy="/tp $">8373 35 -18985</td> <td>7</td> <td></td></tr>
+            <tr><td>6504</td> <td data-copy="$">-1974026656484664578</td> <td data-copy="/tp $">6173 31 15842</td> <td>6</td> <td></td></tr>
+            <tr><td>6506</td> <td data-copy="$">-3137001957115906250</td> <td data-copy="/tp $">-13255 17 10796</td> <td>6</td> <td></td></tr>
+            <tr><td>6540</td> <td data-copy="$">-8844368248172957702</td> <td data-copy="/tp $">4715 37 -23473</td> <td>8</td> <td></td></tr>
+            <tr><td>6545</td> <td data-copy="$">3925546351485938907</td> <td data-copy="/tp $">3724 31 11051</td> <td>4</td> <td></td></tr>
+            <tr><td>6548</td> <td data-copy="$">-8734946446463191451</td> <td data-copy="/tp $">-5434 37 -13856</td> <td>5</td> <td></td></tr>
+            <tr><td>6585</td> <td data-copy="$">8804374325081413216</td> <td data-copy="/tp $">-17621 27 -16382</td> <td>8</td> <td l><a href="#fav-6585">This seed also includes two other six eyes, and a corrupted portal</a></td></tr>
+            <tr><td>6585</td> <td data-copy="$">8804374325081413216</td> <td data-copy="/tp $">20073 32 189</td> <td>7</td> <td l><a href="#fav-6585">This seed also includes two other six eyes, and a corrupted portal</a></td></tr>
+            <tr><td>6585</td> <td data-copy="$">8804374325081413216</td> <td data-copy="/tp $">3323 43 19638</td> <td>7</td> <td l><a href="#fav-6585">This seed also includes two other six eyes, and a corrupted portal</a></td></tr>
+            <tr><td>6595</td> <td data-copy="$">7392589591656190063</td> <td data-copy="/tp $">-16570 35 -3924</td> <td>6</td> <td></td></tr>
+            <tr><td>6621</td> <td data-copy="$">2756793722362344941</td> <td data-copy="/tp $">-17381 31 4333</td> <td>6</td> <td></td></tr>
+            <tr><td>6648</td> <td data-copy="$">427215792129471306</td> <td data-copy="/tp $">12785 23 -11830</td> <td>6</td> <td></td></tr>
+            <tr><td>6678</td> <td data-copy="$">1324983165271562097</td> <td data-copy="/tp $">-19433 36 -4230</td> <td>7</td> <td></td></tr>
+            <tr><td>6681</td> <td data-copy="$">1419594429232276474</td> <td data-copy="/tp $">19580 25 -6571</td> <td>7</td> <td></td></tr>
+            <tr><td>6693</td> <td data-copy="$">5514993881273359817</td> <td data-copy="/tp $">-11747 39 -724</td> <td>4</td> <td></td></tr>
+            <tr><td>6706</td> <td data-copy="$">-1246274563275051847</td> <td data-copy="/tp $">-20880 34 -1967</td> <td>7</td> <td></td></tr>
+            <tr><td>6723</td> <td data-copy="$">-8768971062607989034</td> <td data-copy="/tp $">5523 21 -10477</td> <td>4</td> <td></td></tr>
+            <tr><td>6725</td> <td data-copy="$">-6108378920402127463</td> <td data-copy="/tp $">-11187 32 -2746</td> <td>4</td> <td></td></tr>
+            <tr><td>6736</td> <td data-copy="$">-4171508068375605890</td> <td data-copy="/tp $">-12476 21 6593</td> <td>5</td> <td></td></tr>
+            <tr><td>6771</td> <td data-copy="$">-4614904069694821615</td> <td data-copy="/tp $">11288 18 1765</td> <td>4</td> <td></td></tr>
+            <tr><td>6781</td> <td data-copy="$">-3742783087544154486</td> <td data-copy="/tp $">4735 15 -10582</td> <td>4</td> <td></td></tr>
+            <tr><td>6787</td> <td data-copy="$">-5098968589406799205</td> <td data-copy="/tp $">-12901 34 -11396</td> <td>6</td> <td></td></tr>
+            <tr><td>6790</td> <td data-copy="$">-5694945430105456126</td> <td data-copy="/tp $">19153 19 7051</td> <td>7</td> <td></td></tr>
+            <tr><td>6812</td> <td data-copy="$">-5555413741320792942</td> <td data-copy="/tp $">-4637 45 -23161</td> <td>8</td> <td></td></tr>
+            <tr><td>6821</td> <td data-copy="$">5986666807616785876</td> <td data-copy="/tp $">-6312 24 -5677</td> <td>3</td> <td></td></tr>
+            <tr><td>6835</td> <td data-copy="$">-5115499193321873223</td> <td data-copy="/tp $">158 36 14650</td> <td>5</td> <td></td></tr>
+            <tr><td>6865</td> <td data-copy="$">-4169281933449011516</td> <td data-copy="/tp $">1092 31 916</td> <td>1</td> <td></td></tr>
+            <tr><td>6885</td> <td data-copy="$">-1833361559652202067</td> <td data-copy="/tp $">2115 24 -17605</td> <td>6</td> <td></td></tr>
+            <tr><td>6949</td> <td data-copy="$">-6098732911146182095</td> <td data-copy="/tp $">-18021 31 9775</td> <td>7</td> <td></td></tr>
+            <tr><td>6974</td> <td data-copy="$">-2246360408339710001</td> <td data-copy="/tp $">11203 19 1743</td> <td>4</td> <td></td></tr>
+            <tr><td>6997</td> <td data-copy="$">3749323234033663248</td> <td data-copy="/tp $">3287 41 13385</td> <td>5</td> <td></td></tr>
+            <tr><td>7032</td> <td data-copy="$">4258916829051542971</td> <td data-copy="/tp $">14612 30 -1890</td> <td>5</td> <td></td></tr>
+            <tr><td>7035</td> <td data-copy="$">-87331268864934482</td> <td data-copy="/tp $">20254 34 3021</td> <td>7</td> <td></td></tr>
+            <tr><td>7044</td> <td data-copy="$">7817686866003572159</td> <td data-copy="/tp $">16839 28 10664</td> <td>7</td> <td></td></tr>
+            <tr><td>7062</td> <td data-copy="$">-2520248084106290195</td> <td data-copy="/tp $">-20146 25 -2114</td> <td>7</td> <td></td></tr>
+            <tr><td>7085</td> <td data-copy="$">7872929284495942966</td> <td data-copy="/tp $">9200 15 14778</td> <td>6</td> <td></td></tr>
+            <tr><td>7097</td> <td data-copy="$">-4503775894301524690</td> <td data-copy="/tp $">-14638 26 8295</td> <td>6</td> <td></td></tr>
+            <tr><td>7106</td> <td data-copy="$">-1698484625246028357</td> <td data-copy="/tp $">-1384 26 4540</td> <td>2</td> <td></td></tr>
+            <tr><td>7143</td> <td data-copy="$">-5980620752564248965</td> <td data-copy="/tp $">-837 25 -8032</td> <td>3</td> <td></td></tr>
+            <tr><td>7155</td> <td data-copy="$">-9166385125222748611</td> <td data-copy="/tp $">-10811 39 -17742</td> <td>7</td> <td></td></tr>
+            <tr><td>7182</td> <td data-copy="$">9145861907783410468</td> <td data-copy="/tp $">-15060 19 -14032</td> <td>7</td> <td></td></tr>
+            <tr><td>7182</td> <td data-copy="$">9145861907783410468</td> <td data-copy="/tp $">1636 29 -8018</td> <td>3</td> <td></td></tr>
+            <tr><td>7204</td> <td data-copy="$">8437044569614471598</td> <td data-copy="/tp $">-7241 15 -9201</td> <td>4</td> <td></td></tr>
+            <tr><td>7229</td> <td data-copy="$">5761777649343625899</td> <td data-copy="/tp $">19867 43 2533</td> <td>7</td> <td></td></tr>
+            <tr><td>7238</td> <td data-copy="$">349073550570588186</td> <td data-copy="/tp $">3166 34 -22969</td> <td>8</td> <td></td></tr>
+            <tr><td>7271</td> <td data-copy="$">8899074857112972325</td> <td data-copy="/tp $">17077 25 3777</td> <td>6</td> <td></td></tr>
+            <tr><td>7274</td> <td data-copy="$">-6291920989478050651</td> <td data-copy="/tp $">-1420 35 16862</td> <td>6</td> <td></td></tr>
+            <tr><td>7279</td> <td data-copy="$">-5275820965627558297</td> <td data-copy="/tp $">11520 30 3287</td> <td>4</td> <td></td></tr>
+            <tr><td>7280</td> <td data-copy="$">-662745797823456954</td> <td data-copy="/tp $">19705 38 -14035</td> <td>8</td> <td></td></tr>
+            <tr><td>7293</td> <td data-copy="$">4028331709184638180</td> <td data-copy="/tp $">29 36 -17559</td> <td>6</td> <td></td></tr>
+            <tr><td>7299</td> <td data-copy="$">-3390715576687111632</td> <td data-copy="/tp $">-7720 23 8182</td> <td>4</td> <td></td></tr>
+            <tr><td>7305</td> <td data-copy="$">-3894600962097137688</td> <td data-copy="/tp $">-10959 38 -3462</td> <td>4</td> <td></td></tr>
+            <tr><td>7315</td> <td data-copy="$">6505307918918853609</td> <td data-copy="/tp $">10769 26 13860</td> <td>6</td> <td></td></tr>
+            <tr><td>7338</td> <td data-copy="$">6837420682690094632</td> <td data-copy="/tp $">15921 26 -13008</td> <td>7</td> <td></td></tr>
+            <tr><td>7350</td> <td data-copy="$">1939013756921178889</td> <td data-copy="/tp $">18880 23 -7595</td> <td>7</td> <td></td></tr>
+            <tr><td>7379</td> <td data-copy="$">6691180444441799119</td> <td data-copy="/tp $">-14256 39 15188</td> <td>7</td> <td></td></tr>
+            <tr><td>7380</td> <td data-copy="$">4628754275119099253</td> <td data-copy="/tp $">-12269 37 6513</td> <td>5</td> <td></td></tr>
+            <tr><td>7397</td> <td data-copy="$">-5795937093462269127</td> <td data-copy="/tp $">20516 32 -1507</td> <td>7</td> <td></td></tr>
+            <tr><td>7408</td> <td data-copy="$">-3845836997612177614</td> <td data-copy="/tp $">-12763 41 6487</td> <td>5</td> <td></td></tr>
+            <tr><td>7421</td> <td data-copy="$">-7818905161761386576</td> <td data-copy="/tp $">-15326 29 8982</td> <td>6</td> <td></td></tr>
+            <tr><td>7429</td> <td data-copy="$">-3205360879460868612</td> <td data-copy="/tp $">10797 27 4322</td> <td>4</td> <td></td></tr>
+            <tr><td>7437</td> <td data-copy="$">-7992279475883539276</td> <td data-copy="/tp $">-6316 43 12884</td> <td>5</td> <td></td></tr>
+            <tr><td>7439</td> <td data-copy="$">-5350530114376667248</td> <td data-copy="/tp $">17922 37 -454</td> <td>6</td> <td></td></tr>
+            <tr><td>7442</td> <td data-copy="$">-7587362594962472396</td> <td data-copy="/tp $">22471 33 -7336</td> <td>8</td> <td></td></tr>
+            <tr><td>7449</td> <td data-copy="$">-2985349063871560645</td> <td data-copy="/tp $">19956 33 2830</td> <td>7</td> <td></td></tr>
+            <tr><td>7465</td> <td data-copy="$">6778183032310671643</td> <td data-copy="/tp $">20139 21 -5505</td> <td>7</td> <td></td></tr>
+            <tr><td>7466</td> <td data-copy="$">8046022097053071664</td> <td data-copy="/tp $">11267 15 2942</td> <td>4</td> <td></td></tr>
+            <tr><td>7467</td> <td data-copy="$">4361852052628521731</td> <td data-copy="/tp $">1515 35 -17549</td> <td>6</td> <td></td></tr>
+            <tr><td>7470</td> <td data-copy="$">4026112967614821098</td> <td data-copy="/tp $">22919 21 6105</td> <td>8</td> <td></td></tr>
+            <tr><td>7474</td> <td data-copy="$">305255841509011988</td> <td data-copy="/tp $">-12719 29 5439</td> <td>5</td> <td></td></tr>
+            <tr><td>7487</td> <td data-copy="$">-2818645943411051957</td> <td data-copy="/tp $">7617 28 12210</td> <td>5</td> <td></td></tr>
+            <tr><td>7505</td> <td data-copy="$">-4272889457928741768</td> <td data-copy="/tp $">13101 29 6160</td> <td>5</td> <td></td></tr>
+            <tr><td>7529</td> <td data-copy="$">-3606914787730289913</td> <td data-copy="/tp $">-7427 25 11519</td> <td>5</td> <td></td></tr>
+            <tr><td>7530</td> <td data-copy="$">4924556867941351005</td> <td data-copy="/tp $">-6528 39 -5683</td> <td>3</td> <td></td></tr>
+            <tr><td>7539</td> <td data-copy="$">2159603525401697676</td> <td data-copy="/tp $">-3233 36 -16755</td> <td>6</td> <td></td></tr>
+            <tr><td>7555</td> <td data-copy="$">5111744724525857955</td> <td data-copy="/tp $">8621 31 -10938</td> <td>5</td> <td></td></tr>
+            <tr><td>7581</td> <td data-copy="$">5440833859832048514</td> <td data-copy="/tp $">498 35 -20278</td> <td>7</td> <td></td></tr>
+            <tr><td>7582</td> <td data-copy="$">-4960549871574488218</td> <td data-copy="/tp $">4013 36 -2758</td> <td>2</td> <td></td></tr>
+            <tr><td>7593</td> <td data-copy="$">-9016676337879294232</td> <td data-copy="/tp $">3673 25 -14399</td> <td>5</td> <td></td></tr>
+            <tr><td>7594</td> <td data-copy="$">-1217297213578180721</td> <td data-copy="/tp $">-14762 27 174</td> <td>5</td> <td></td></tr>
+            <tr><td>7641</td> <td data-copy="$">4536523208968261985</td> <td data-copy="/tp $">12603 38 -6981</td> <td>5</td> <td></td></tr>
+            <tr><td>7692</td> <td data-copy="$">-75330566361202069</td> <td data-copy="/tp $">9579 32 -14192</td> <td>6</td> <td></td></tr>
+            <tr><td>7721</td> <td data-copy="$">3923802012348812709</td> <td data-copy="/tp $">-640 29 -1287</td> <td>1</td> <td l class="positive">This was found during the run</td></tr>
+            <tr><td>7730</td> <td data-copy="$">7070168403725291479</td> <td data-copy="/tp $">-11248 41 13634</td> <td>6</td> <td></td></tr>
+            <tr><td>7744</td> <td data-copy="$">6063112126356233109</td> <td data-copy="/tp $">-3877 36 20609</td> <td>7</td> <td></td></tr>
+            <tr><td>7754</td> <td data-copy="$">-7993648050253168505</td> <td data-copy="/tp $">16437 31 5845</td> <td>6</td> <td></td></tr>
+            <tr><td>7787</td> <td data-copy="$">-3045549696247937007</td> <td data-copy="/tp $">4606 38 1344</td> <td>2</td> <td></td></tr>
+            <tr><td>7790</td> <td data-copy="$">-5849415768667550119</td> <td data-copy="/tp $">-11510 34 16268</td> <td>7</td> <td></td></tr>
+            <tr><td>7827</td> <td data-copy="$">-2933075649669465937</td> <td data-copy="/tp $">19502 21 -12626</td> <td>8</td> <td></td></tr>
+            <tr><td>7830</td> <td data-copy="$">3659085134691617615</td> <td data-copy="/tp $">-9212 100 7332</td> <td>4</td> <td></td></tr>
+            <tr><td>7848</td> <td data-copy="$">-6800550057487080850</td> <td data-copy="/tp $">5829 45 -9082</td> <td>4</td> <td></td></tr>
+            <tr><td>7855</td> <td data-copy="$">1101619079891603084</td> <td data-copy="/tp $">13521 33 -11054</td> <td>6</td> <td></td></tr>
+            <tr><td>7856</td> <td data-copy="$">7882811851288292455</td> <td data-copy="/tp $">16489 17 -5867</td> <td>6</td> <td></td></tr>
+            <tr><td>7879</td> <td data-copy="$">4078395372779658910</td> <td data-copy="/tp $">16182 30 -12232</td> <td>7</td> <td></td></tr>
+            <tr><td>7879</td> <td data-copy="$">4078395372779658910</td> <td data-copy="/tp $">4048 25 -13315</td> <td>5</td> <td></td></tr>
+            <tr><td>7889</td> <td data-copy="$">-8255706159045364349</td> <td data-copy="/tp $">14743 21 -8236</td> <td>6</td> <td></td></tr>
+            <tr><td>7903</td> <td data-copy="$">7847706732428069474</td> <td data-copy="/tp $">2027 15 -4361</td> <td>2</td> <td></td></tr>
+            <tr><td>7920</td> <td data-copy="$">-302028850423863444</td> <td data-copy="/tp $">-20674 29 12526</td> <td>8</td> <td></td></tr>
+            <tr><td>7928</td> <td data-copy="$">-6127255430659534003</td> <td data-copy="/tp $">-2945 11 -13893</td> <td>5</td> <td></td></tr>
+            <tr><td>7946</td> <td data-copy="$">3640051606196341307</td> <td data-copy="/tp $">16251 21 12344</td> <td>7</td> <td></td></tr>
+            <tr><td>7957</td> <td data-copy="$">4503767206939975414</td> <td data-copy="/tp $">-19661 34 6335</td> <td>7</td> <td></td></tr>
+            <tr><td>7981</td> <td data-copy="$">295909387183512344</td> <td data-copy="/tp $">10028 35 13573</td> <td>6</td> <td></td></tr>
+            <tr><td>7986</td> <td data-copy="$">-8146645920551109055</td> <td data-copy="/tp $">3005 41 -20842</td> <td>7</td> <td></td></tr>
+            <tr><td>8013</td> <td data-copy="$">780784466494255666</td> <td data-copy="/tp $">-21077 22 -869</td> <td>7</td> <td></td></tr>
+            <tr><td>8014</td> <td data-copy="$">-2675450342031998115</td> <td data-copy="/tp $">-15667 29 -7384</td> <td>6</td> <td></td></tr>
+            <tr><td>8016</td> <td data-copy="$">-3397078911827073034</td> <td data-copy="/tp $">354 25 -2155</td> <td>1</td> <td></td></tr>
+            <tr><td>8031</td> <td data-copy="$">6823305850056249194</td> <td data-copy="/tp $">8340 32 -2039</td> <td>3</td> <td></td></tr>
+            <tr><td>8039</td> <td data-copy="$">-5236012237428487519</td> <td data-copy="/tp $">13530 26 16197</td> <td>7</td> <td></td></tr>
+            <tr><td>8045</td> <td data-copy="$">-4207700486068117388</td> <td data-copy="/tp $">-17935 32 -1077</td> <td>6</td> <td></td></tr>
+            <tr><td>8071</td> <td data-copy="$">-99645571963575484</td> <td data-copy="/tp $">-6021 18 13207</td> <td>5</td> <td></td></tr>
+            <tr><td>8071</td> <td data-copy="$">-99645571963575484</td> <td data-copy="/tp $">7020 38 8104</td> <td>4</td> <td></td></tr>
+            <tr><td>8073</td> <td data-copy="$">6639980822686772680</td> <td data-copy="/tp $">1644 32 -20193</td> <td>7</td> <td></td></tr>
+            <tr><td>8149</td> <td data-copy="$">-2059040642735571238</td> <td data-copy="/tp $">-2925 37 -16625</td> <td>6</td> <td></td></tr>
+            <tr><td>8173</td> <td data-copy="$">1341995853402738557</td> <td data-copy="/tp $">-11058 20 -12512</td> <td>6</td> <td></td></tr>
+            <tr><td>8177</td> <td data-copy="$">1702907812533806825</td> <td data-copy="/tp $">1418 46 17061</td> <td>6</td> <td></td></tr>
+            <tr><td>8181</td> <td data-copy="$">-3118215947843435948</td> <td data-copy="/tp $">-1985 14 -612</td> <td>1</td> <td></td></tr>
+            <tr><td>8189</td> <td data-copy="$">-3853714681829933023</td> <td data-copy="/tp $">-2585 44 -7299</td> <td>3</td> <td></td></tr>
+            <tr><td>8192</td> <td data-copy="$">-6461676017161330754</td> <td data-copy="/tp $">-2359 27 -20787</td> <td>7</td> <td></td></tr>
+            <tr><td>8203</td> <td data-copy="$">3456749323282937606</td> <td data-copy="/tp $">-2085 27 -20367</td> <td>7</td> <td></td></tr>
+        </table>
+        
+        <h3 id="seven-eyes">Seven Eye Portals</h3>
+        <p>I've found a total of <b>49</b> seven eye portals, across <b>49</b> seeds. Of these, <b>two</b> were in the first ring.</p>
+        <p>The most seven eye portals in one seed so far was <b>1</b>, which happened in <b>49</b> seeds.</p>
+        <p class="disclaimer">Nothing in this table has been manually verified.</p>
+        <table>
+            <tr><th>Run #</th>  <th>Seed</th>                   <th>Coordinates</th>                <th>SH Ring</th>    <th l>Notes</th></tr>
+            <tr><td>154</td> <td data-copy="$">1723506968769227462</td> <td data-copy="/tp $">1585 38 17439</td> <td>6</td> <td></td></tr>
+            <tr><td>296</td> <td data-copy="$">2137055321336038627</td> <td data-copy="/tp $">5227 37 19359</td> <td>7</td> <td></td></tr>
+            <tr><td>322</td> <td data-copy="$">2738905005457096323</td> <td data-copy="/tp $">7177 45 -9110</td> <td>4</td> <td></td></tr>
+            <tr><td>431</td> <td data-copy="$">-4210638218823912809</td> <td data-copy="/tp $">8072 30 15632</td> <td>6</td> <td></td></tr>
+            <tr><td>473</td> <td data-copy="$">824731052498817066</td> <td data-copy="/tp $">345 30 10811</td> <td>4</td> <td></td></tr>
+            <tr><td>611</td> <td data-copy="$">565754781532228084</td> <td data-copy="/tp $">-2173 16 20671</td> <td>7</td> <td l><a href="#fav-611">This seed also has a surface exposed stronghold</a></td></tr>
+            <tr><td>938</td> <td data-copy="$">2120468677757358585</td> <td data-copy="/tp $">5627 38 -6092</td> <td>3</td> <td></td></tr>
+            <tr><td>1110</td> <td data-copy="$">7721534345700595838</td> <td data-copy="/tp $">-1125 20 2084</td> <td>1</td> <td l class="positive">This was found during the run</td></tr>
+            <tr><td>2037</td> <td data-copy="$">6054284875958940868</td> <td data-copy="/tp $">-2650 20 16721</td> <td>6</td> <td></td></tr>
+            <tr><td>2074</td> <td data-copy="$">760559451067526620</td> <td data-copy="/tp $">-8993 12 15467</td> <td>6</td> <td></td></tr>
+            <tr><td>2102</td> <td data-copy="$">8801223938153936809</td> <td data-copy="/tp $">1278 17 -7710</td> <td>3</td> <td></td></tr>
+            <tr><td>2115</td> <td data-copy="$">2168672508200299854</td> <td data-copy="/tp $">5794 25 -23059</td> <td>8</td> <td></td></tr>
+            <tr><td>2241</td> <td data-copy="$">6500289502668176160</td> <td data-copy="/tp $">18751 18 -7389</td> <td>7</td> <td></td></tr>
+            <tr><td>2275</td> <td data-copy="$">2041681558498964312</td> <td data-copy="/tp $">-2560 36 -17433</td> <td>6</td> <td></td></tr>
+            <tr><td>2498</td> <td data-copy="$">5146937076143633937</td> <td data-copy="/tp $">2501 21 -7786</td> <td>3</td> <td></td></tr>
+            <tr><td>2917</td> <td data-copy="$">5741459447310504199</td> <td data-copy="/tp $">-17640 28 1500</td> <td>6</td> <td></td></tr>
+            <tr><td>2940</td> <td data-copy="$">4358043998072805974</td> <td data-copy="/tp $">5033 17 -16034</td> <td>6</td> <td></td></tr>
+            <tr><td>2986</td> <td data-copy="$">-2942226551634673300</td> <td data-copy="/tp $">189 35 2266</td> <td>1</td> <td l><a href="#fav-2986">This seed also includes a surface exposed stronghold</a></td></tr>
+            <tr><td>2993</td> <td data-copy="$">-8220123969425489419</td> <td data-copy="/tp $">-12503 37 15957</td> <td>7</td> <td></td></tr>
+            <tr><td>3148</td> <td data-copy="$">-8678664462414113895</td> <td data-copy="/tp $">13771 28 -9924</td> <td>6</td> <td></td></tr>
+            <tr><td>3307</td> <td data-copy="$">-3262753683514301455</td> <td data-copy="/tp $">-8689 25 15567</td> <td>6</td> <td></td></tr>
+            <tr><td>3382</td> <td data-copy="$">7253188768193528390</td> <td data-copy="/tp $">-13107 37 -6554</td> <td>5</td> <td></td></tr>
+            <tr><td>3629</td> <td data-copy="$">5584724542445393451</td> <td data-copy="/tp $">571 29 -5360</td> <td>2</td> <td></td></tr>
+            <tr><td>3887</td> <td data-copy="$">-2328469756771795192</td> <td data-copy="/tp $">-10620 33 13291</td> <td>6</td> <td></td></tr>
+            <tr><td>3967</td> <td data-copy="$">480599666823320506</td> <td data-copy="/tp $">-11948 21 -16997</td> <td>7</td> <td></td></tr>
+            <tr><td>4167</td> <td data-copy="$">1889004862532549271</td> <td data-copy="/tp $">2405 25 -11049</td> <td>4</td> <td></td></tr>
+            <tr><td>4361</td> <td data-copy="$">8203257141762583425</td> <td data-copy="/tp $">10176 45 -6115</td> <td>4</td> <td></td></tr>
+            <tr><td>4518</td> <td data-copy="$">-4234657105245476999</td> <td data-copy="/tp $">9832 35 -18123</td> <td>7</td> <td></td></tr>
+            <tr><td>4649</td> <td data-copy="$">8249101800001579012</td> <td data-copy="/tp $">-17197 44 -3828</td> <td>6</td> <td></td></tr>
+            <tr><td>4765</td> <td data-copy="$">-1090019233154958710</td> <td data-copy="/tp $">-14781 22 13343</td> <td>7</td> <td></td></tr>
+            <tr><td>4853</td> <td data-copy="$">8755369977118239273</td> <td data-copy="/tp $">13941 33 19282</td> <td>8</td> <td></td></tr>
+            <tr><td>4963</td> <td data-copy="$">4072539563963843325</td> <td data-copy="/tp $">-10230 39 -17334</td> <td>7</td> <td></td></tr>
+            <tr><td>5124</td> <td data-copy="$">-5785213780325011013</td> <td data-copy="/tp $">20383 41 -957</td> <td>7</td> <td></td></tr>
+            <tr><td>5146</td> <td data-copy="$">2351289985192377423</td> <td data-copy="/tp $">-12156 36 -12452</td> <td>6</td> <td></td></tr>
+            <tr><td>5266</td> <td data-copy="$">6529446041366448874</td> <td data-copy="/tp $">-7873 35 12581</td> <td>5</td> <td></td></tr>
+            <tr><td>5274</td> <td data-copy="$">-2752019995354910122</td> <td data-copy="/tp $">12 14 -5618</td> <td>2</td> <td l><a href="#fav-5274">This seed also includes a surface exposed stronghold</a></td></tr>
+            <tr><td>5354</td> <td data-copy="$">4796013633364150056</td> <td data-copy="/tp $">-16653 18 -4042</td> <td>6</td> <td></td></tr>
+            <tr><td>5465</td> <td data-copy="$">1876965451730984837</td> <td data-copy="/tp $">-2188 31 -20443</td> <td>7</td> <td></td></tr>
+            <tr><td>5572</td> <td data-copy="$">3871114412324966381</td> <td data-copy="/tp $">16101 40 6725</td> <td>6</td> <td></td></tr>
+            <tr><td>5831</td> <td data-copy="$">5721328314279549238</td> <td data-copy="/tp $">4200 30 13963</td> <td>5</td> <td></td></tr>
+            <tr><td>6506</td> <td data-copy="$">-3137001957115906250</td> <td data-copy="/tp $">5754 39 5972</td> <td>3</td> <td></td></tr>
+            <tr><td>6766</td> <td data-copy="$">-4259269716252949936</td> <td data-copy="/tp $">16218 14 -5384</td> <td>6</td> <td></td></tr>
+            <tr><td>7393</td> <td data-copy="$">1669412986963781350</td> <td data-copy="/tp $">-11643 24 -8065</td> <td>5</td> <td></td></tr>
+            <tr><td>7586</td> <td data-copy="$">-950669598146474960</td> <td data-copy="/tp $">526 38 -21061</td> <td>7</td> <td></td></tr>
+            <tr><td>7637</td> <td data-copy="$">-6799086388437392978</td> <td data-copy="/tp $">230 30 11537</td> <td>4</td> <td></td></tr>
+            <tr><td>7776</td> <td data-copy="$">-7074054491505345691</td> <td data-copy="/tp $">-16935 16 5017</td> <td>6</td> <td></td></tr>
+            <tr><td>7887</td> <td data-copy="$">4462424029936638993</td> <td data-copy="/tp $">-6695 19 -12412</td> <td>5</td> <td></td></tr>
+            <tr><td>7944</td> <td data-copy="$">396430374646818432</td> <td data-copy="/tp $">8218 27 -11780</td> <td>5</td> <td></td></tr>
+            <tr><td>8008</td> <td data-copy="$">-6229790973534083079</td> <td data-copy="/tp $">-7594 31 891</td> <td>3</td> <td></td></tr>
+        </table>
+    </section>
+        
+        
+
+    <section>
+        <h2 id="surface-exposed">Surface Exposed Strongholds</h2>
+        <p>I've found a total of <b>198</b> exposed strongholds, across <b>195</b> seeds. This gives the experimental odds of a stronghold being surface exposed as <b data-tippy-content="These are experimental odds, and will change every new run as the total number of strongholds searched changes">1 in 5,187</b>.</p>
+        <p>The most exposed strongholds in one seed so far was <b>2</b>, which happened in <b>3</b> seeds.</p>
+        <p>Note: All the coordinates here point to the starter staircase, the exposed segment may be elsewhere</p>
+        <p class="disclaimer">These tables were produced by a manual verification of any stronghold with a highest point of Y ≥ 62, and were categorised by me. Many strongholds correctly generated above this height, but were fully covered by terrain. Strongholds with a highest point below Y = 62 were not included, even if caves or other terrain would have caused it to be partially exposed.</p>
+        
+        <h3 id="surface-exposed-barely">Few Blocks</h3>
+        <table>
+            <tr><th>Run #</th>  <th>Seed</th>                                   <th>Coordinates</th>                            <th>SH Ring</th>        <th l>Notes</th></tr>
+            <tr><td>  177</td>  <td data-copy="$">  935698967925242906</td>     <td data-copy="/tp $">  -1676 62 -1852</td>     <td>1</td>              <td l></td></tr>
+            <tr><td>  906</td>  <td data-copy="$">-8158387509410753952</td>     <td data-copy="/tp $">  -5004 64 -1836</td>     <td>2</td>              <td l></td></tr>
+            <tr><td>  918</td>  <td data-copy="$">-3846636138420961185</td>     <td data-copy="/tp $"> -13084 62 12228</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 1761</td>  <td data-copy="$">-7169360971094260108</td>     <td data-copy="/tp $"> 14324 62 -13884</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 2185</td>  <td data-copy="$"> 1736975605693410507</td>     <td data-copy="/tp $"> -23772 64 -1260</td>     <td>8</td>              <td l>Corner of library</td></tr>
+            <tr><td> 2497</td>  <td data-copy="$">-8737076515670530520</td>     <td data-copy="/tp $"> -14412 64 14500</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 2590</td>  <td data-copy="$">-1751878533420411619</td>     <td data-copy="/tp $"> 14388 62 -14988</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 2779</td>  <td data-copy="$"> 2311348780363659850</td>     <td data-copy="/tp $">  17156 66 -3052</td>     <td>6</td>              <td l>Edge of library</td></tr>
+            <tr><td> 2850</td>  <td data-copy="$"> 7496544452027607181</td>     <td data-copy="/tp $">   1588 62 23572</td>     <td>8</td>              <td l>Edge of library</td></tr>
+            <tr><td> 2969</td>  <td data-copy="$">-1893209362106129266</td>     <td data-copy="/tp $">   4996 64 10676</td>     <td>4</td>              <td l>Edge of library</td></tr>
+            <tr><td> 3030</td>  <td data-copy="$"> 2031221741857518383</td>     <td data-copy="/tp $">   7780 64 18996</td>     <td>7</td>              <td l>Corner of starter</td></tr>
+            <tr><td> 3226</td>  <td data-copy="$">-1315904137195469621</td>     <td data-copy="/tp $">    1300 62 1668</td>     <td>1</td>              <td l class="positive">One block of library. This stronghold was visited during the run, but the surface exposed section wasn't noticed</td></tr>
+            <tr><td> 4312</td>  <td data-copy="$">-6727168491819201695</td>     <td data-copy="/tp $">  -6108 62 19060</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 4752</td>  <td data-copy="$"> 1834501733155453520</td>     <td data-copy="/tp $">   4628 62 20500</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 4974</td>  <td data-copy="$"> 9157138966470508811</td>     <td data-copy="/tp $">  19844 62 -4284</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 5023</td>  <td data-copy="$"> 4379832450739000201</td>     <td data-copy="/tp $">  -17196 62 -572</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 5309</td>  <td data-copy="$">  -34089667151020114</td>     <td data-copy="/tp $">  5300 62 -20252</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 5534</td>  <td data-copy="$"> 8588352494343356128</td>     <td data-copy="/tp $">-13932 64 -14828</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 5886</td>  <td data-copy="$"> 2876301081016092071</td>     <td data-copy="/tp $"> 10628 64 -13996</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 6857</td>  <td data-copy="$">-3557232856082925331</td>     <td data-copy="/tp $">    7524 62 4036</td>     <td>3</td>              <td l></td></tr>
+            <tr><td> 7890</td>  <td data-copy="$">-3387551635438330042</td>     <td data-copy="/tp $">  16356 64 -3804</td>     <td>6</td>              <td l></td></tr>
+        </table>
+
+        <h3 id="surface-exposed-starter">Just Starter</h3>
+        <table>
+            <tr><th>Run #</th>  <th>Seed</th>                                   <th>Coordinates</th>                            <th>SH Ring</th>        <th l>Notes</th></tr>
+            <tr><td>   86</td>  <td data-copy="$"> 6852614180273364957</td>     <td data-copy="/tp $">  -11964 64 8052</td>     <td>5</td>              <td l></td></tr>
+            <tr><td>  140</td>  <td data-copy="$">-8087417819540802772</td>     <td data-copy="/tp $"> -17148 62 -4604</td>     <td>6</td>              <td l></td></tr>
+            <tr><td>  161</td>  <td data-copy="$">  483998746777454452</td>     <td data-copy="/tp $">   -684 64 14244</td>     <td>5</td>              <td l></td></tr>
+            <tr><td>  388</td>  <td data-copy="$"> 4005973398464105567</td>     <td data-copy="/tp $">    17860 64 -76</td>     <td>6</td>              <td l></td></tr>
+            <tr><td>  391</td>  <td data-copy="$">  446720663825996051</td>     <td data-copy="/tp $">  -2652 62 -7932</td>     <td>3</td>              <td l></td></tr>
+            <tr><td>  469</td>  <td data-copy="$"> 4651770014811127087</td>     <td data-copy="/tp $"> -19148 64 14500</td>     <td>8</td>              <td l></td></tr>
+            <tr><td>  494</td>  <td data-copy="$"> -544767311785526757</td>     <td data-copy="/tp $"> -9228 64 -15100</td>     <td>6</td>              <td l></td></tr>
+            <tr><td>  520</td>  <td data-copy="$"> 5004774250169448079</td>     <td data-copy="/tp $">  5268 62 -16076</td>     <td>6</td>              <td l></td></tr>
+            <tr><td>  724</td>  <td data-copy="$">-8351698636099768489</td>     <td data-copy="/tp $">  1460 62 -10876</td>     <td>4</td>              <td l></td></tr>
+            <tr><td>  841</td>  <td data-copy="$"> 3900793101668327136</td>     <td data-copy="/tp $">  -11468 64 -588</td>     <td>4</td>              <td l></td></tr>
+            <tr><td>  946</td>  <td data-copy="$"> 2772808348790383891</td>     <td data-copy="/tp $"> 15828 64 -18156</td>     <td>8</td>              <td l></td></tr>
+            <tr><td>  953</td>  <td data-copy="$"> -895204143111068164</td>     <td data-copy="/tp $">    -108 62 7924</td>     <td>3</td>              <td l></td></tr>
+            <tr><td>  954</td>  <td data-copy="$">-7163577445650550493</td>     <td data-copy="/tp $">  17188 62 12244</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 1051</td>  <td data-copy="$">  917124560501660363</td>     <td data-copy="/tp $"> -11804 62 -7100</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 1143</td>  <td data-copy="$">-8797278550882807947</td>     <td data-copy="/tp $">   16884 64 4420</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 1205</td>  <td data-copy="$"> 2976733159091141931</td>     <td data-copy="/tp $">    3892 64 9844</td>     <td>4</td>              <td l></td></tr>
+            <tr><td> 1339</td>  <td data-copy="$"> 4211761932805233531</td>     <td data-copy="/tp $"> -13916 64 15652</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 1830</td>  <td data-copy="$"> -497086742202807892</td>     <td data-copy="/tp $"> -13212 62 15764</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 1875</td>  <td data-copy="$"> -776965323978524826</td>     <td data-copy="/tp $"> -3212 64 -17484</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 1957</td>  <td data-copy="$">  203134271636438316</td>     <td data-copy="/tp $">  -18924 64 7332</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 2068</td>  <td data-copy="$">-4571116323456557340</td>     <td data-copy="/tp $"> -13148 64 -6028</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 2071</td>  <td data-copy="$"> 6038779357572729451</td>     <td data-copy="/tp $">   20708 64 1892</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 2097</td>  <td data-copy="$"> 2218291081459585530</td>     <td data-copy="/tp $">    4564 62 6980</td>     <td>3</td>              <td l></td></tr>
+            <tr><td> 2178</td>  <td data-copy="$"> 8183094499006472496</td>     <td data-copy="/tp $">  3060 62 -23884</td>     <td>8</td>              <td l></td></tr>
+            <tr><td> 2255</td>  <td data-copy="$">  853495856053934192</td>     <td data-copy="/tp $">  13332 62 19316</td>     <td>8</td>              <td l></td></tr>
+            <tr><td> 2286</td>  <td data-copy="$"> 2120641990816422747</td>     <td data-copy="/tp $">  3300 62 -11436</td>     <td>4</td>              <td l></td></tr>
+            <tr><td> 2313</td>  <td data-copy="$"> 1360351919420633187</td>     <td data-copy="/tp $">  3604 64 -19692</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 2367</td>  <td data-copy="$">-3892475491386526001</td>     <td data-copy="/tp $">   5044 64 22820</td>     <td>8</td>              <td l></td></tr>
+            <tr><td> 2391</td>  <td data-copy="$"> 5218794311032141972</td>     <td data-copy="/tp $">  -7804 64 18356</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 2477</td>  <td data-copy="$"> 3248448901639251271</td>     <td data-copy="/tp $">   -284 64 -8508</td>     <td>3</td>              <td l><a href="#fav-2477">This stronghold can be seen on a buried treasure map</a></td></tr>
+            <tr><td> 2523</td>  <td data-copy="$">-4363434356843315044</td>     <td data-copy="/tp $"> 14916 62 -13660</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 2537</td>  <td data-copy="$"> 3882909817353808336</td>     <td data-copy="/tp $">  2692 64 -13996</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 2588</td>  <td data-copy="$"> 8009660800348712757</td>     <td data-copy="/tp $">    628 62 11972</td>     <td>4</td>              <td l></td></tr>
+            <tr><td> 2777</td>  <td data-copy="$"> -678647339411030784</td>     <td data-copy="/tp $">   10484 64 2388</td>     <td>4</td>              <td l></td></tr>
+            <tr><td> 2841</td>  <td data-copy="$">-3770665123262725016</td>     <td data-copy="/tp $">    7892 62 -412</td>     <td>3</td>              <td l></td></tr>
+            <tr><td> 2843</td>  <td data-copy="$">  633847650452713533</td>     <td data-copy="/tp $">  9860 62 -14444</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 2946</td>  <td data-copy="$">-2904519356370654435</td>     <td data-copy="/tp $">   16916 64 3060</td>     <td>6</td>              <td l>Several additional rooms exposed by ravine</td></tr>
+            <tr><td> 2986</td>  <td data-copy="$">-2942226551634673300</td>     <td data-copy="/tp $">  16708 62 -2412</td>     <td>6</td>              <td l><a href="#fav-2986">This seed also includes a seven eye in first ring</a></td></tr>
+            <tr><td> 3655</td>  <td data-copy="$"> 7135430683078533499</td>     <td data-copy="/tp $"> -15244 62 12724</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 3741</td>  <td data-copy="$">-7517662897023263624</td>     <td data-copy="/tp $">   11284 62 2132</td>     <td>4</td>              <td l></td></tr>
+            <tr><td> 3831</td>  <td data-copy="$"> 5066019030913137861</td>     <td data-copy="/tp $">    9044 62 5956</td>     <td>4</td>              <td l></td></tr>
+            <tr><td> 3861</td>  <td data-copy="$"> 1939293671389915442</td>     <td data-copy="/tp $">  7188 64 -12844</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 3941</td>  <td data-copy="$">  420514932312779205</td>     <td data-copy="/tp $"> -1964 62 -13564</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 3958</td>  <td data-copy="$">-6243460741593627997</td>     <td data-copy="/tp $">  -5692 62 20180</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 4087</td>  <td data-copy="$"> 6290178381498784726</td>     <td data-copy="/tp $">   19988 62 1044</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 4176</td>  <td data-copy="$">-4718474185999184874</td>     <td data-copy="/tp $"> 13396 62 -12092</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 4243</td>  <td data-copy="$"> 2269697597204197763</td>     <td data-copy="/tp $">  -13964 64 3076</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 4355</td>  <td data-copy="$">-5757381467274622049</td>     <td data-copy="/tp $">  19444 62 -4364</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 4636</td>  <td data-copy="$"> 6647594808581370651</td>     <td data-copy="/tp $"> 13428 64 -15404</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 4683</td>  <td data-copy="$">-8500663990545171259</td>     <td data-copy="/tp $">   13572 62 2500</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 4748</td>  <td data-copy="$"> 7349072437704462037</td>     <td data-copy="/tp $">   5540 62 19476</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 4862</td>  <td data-copy="$">-2181631610902668650</td>     <td data-copy="/tp $"> -14748 64 -9036</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 4948</td>  <td data-copy="$">-3665778748288694367</td>     <td data-copy="/tp $">   16004 64 7716</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 5017</td>  <td data-copy="$"> 8836688219287455603</td>     <td data-copy="/tp $">  -12908 64 6180</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 5098</td>  <td data-copy="$">-6966179757764255572</td>     <td data-copy="/tp $">  -3276 62 14372</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 5133</td>  <td data-copy="$"> 4629466838389676301</td>     <td data-copy="/tp $">   884 64 -11788</td>     <td>4</td>              <td l><a href="#fav-5133">This seed also includes another surface exposed stronghold</a></td></tr>
+            <tr><td> 5133</td>  <td data-copy="$"> 4629466838389676301</td>     <td data-copy="/tp $"> 11444 62 -13804</td>     <td>6</td>              <td l><a href="#fav-5133">This seed also includes another surface exposed stronghold</a></td></tr>
+            <tr><td> 5358</td>  <td data-copy="$">-1643959302684941810</td>     <td data-copy="/tp $">    5684 64 9556</td>     <td>4</td>              <td l></td></tr>
+            <tr><td> 5642</td>  <td data-copy="$"> 6457918550744842943</td>     <td data-copy="/tp $">  8756 62 -15388</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 5710</td>  <td data-copy="$"> 4434441578066464820</td>     <td data-copy="/tp $">   13076 64 6068</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 5788</td>  <td data-copy="$"> 7003472688212396747</td>     <td data-copy="/tp $">   1284 62 19860</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 6036</td>  <td data-copy="$">-8425604598168778953</td>     <td data-copy="/tp $">    3156 64 7300</td>     <td>3</td>              <td l></td></tr>
+            <tr><td> 6040</td>  <td data-copy="$"> 3881356915482248717</td>     <td data-copy="/tp $">    6612 64 3700</td>     <td>3</td>              <td l></td></tr>
+            <tr><td> 6146</td>  <td data-copy="$"> -584726557785402121</td>     <td data-copy="/tp $"> -3148 64 -17180</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 6308</td>  <td data-copy="$"> -764065685551932582</td>     <td data-copy="/tp $">-12236 64 -16700</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 6422</td>  <td data-copy="$">-8393784054033461009</td>     <td data-copy="/tp $"> -9228 62 -11740</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 6534</td>  <td data-copy="$"> 5375525206352885262</td>     <td data-copy="/tp $">  -18604 62 8916</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 6628</td>  <td data-copy="$"> 9222232709270030882</td>     <td data-copy="/tp $">  -5196 64 -6636</td>     <td>3</td>              <td l>Under iceberg</td></tr>
+            <tr><td> 6812</td>  <td data-copy="$">-5555413741320792942</td>     <td data-copy="/tp $">-11308 64 -17612</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 6831</td>  <td data-copy="$"> -579389951088427132</td>     <td data-copy="/tp $">  -19676 64 6084</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 6889</td>  <td data-copy="$">-6721502854525497411</td>     <td data-copy="/tp $">   8036 64 15028</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 6922</td>  <td data-copy="$"> -703634806083009346</td>     <td data-copy="/tp $">  -19180 62 8116</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 6985</td>  <td data-copy="$">-5387405884721900232</td>     <td data-copy="/tp $"> -14812 64 -8556</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 7032</td>  <td data-copy="$"> 4258916829051542971</td>     <td data-copy="/tp $">   3140 64 14500</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 7143</td>  <td data-copy="$">-5980620752564248965</td>     <td data-copy="/tp $">-17676 62 -14780</td>     <td>8</td>              <td l></td></tr>
+            <tr><td> 7162</td>  <td data-copy="$">   39902544893948176</td>     <td data-copy="/tp $">-12828 64 -15884</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 7184</td>  <td data-copy="$"> 8606744433976534384</td>     <td data-copy="/tp $"> -19964 64 -6684</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 7264</td>  <td data-copy="$"> 5880508365844084457</td>     <td data-copy="/tp $">  -14348 62 2532</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 7287</td>  <td data-copy="$">-2453822184279362425</td>     <td data-copy="/tp $">    17076 64 996</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 7334</td>  <td data-copy="$">-3304502750653234160</td>     <td data-copy="/tp $"> -6012 62 -13164</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 7359</td>  <td data-copy="$"> 5114967136566553570</td>     <td data-copy="/tp $">   3380 64 14148</td>     <td>5</td>              <td l></td></tr>
+            <tr><td> 7483</td>  <td data-copy="$">-5309913535438444816</td>     <td data-copy="/tp $">  10660 62 17156</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 7590</td>  <td data-copy="$">-3764967789115652024</td>     <td data-copy="/tp $">  -19212 64 6116</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 7595</td>  <td data-copy="$">-5210023055335155362</td>     <td data-copy="/tp $"> -4412 62 -17196</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 7622</td>  <td data-copy="$">-2202977760124750532</td>     <td data-copy="/tp $"> -13996 64 10132</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 7624</td>  <td data-copy="$">  675135172884692243</td>     <td data-copy="/tp $">-15772 62 -12700</td>     <td>7</td>              <td l>This stronghold also includes a trapped Elder Guardian at roughly <span data-copy="/tp $">-15841 45 -12684</span></td></tr>
+            <tr><td> 7653</td>  <td data-copy="$"> -360351621993447598</td>     <td data-copy="/tp $"> 11620 62 -13404</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 7659</td>  <td data-copy="$">-8208288906104646411</td>     <td data-copy="/tp $"> -3772 64 -20412</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 7728</td>  <td data-copy="$"> 1567596411696749393</td>     <td data-copy="/tp $">   6420 62 -8604</td>     <td>4</td>              <td l></td></tr>
+            <tr><td> 7785</td>  <td data-copy="$">-8436084811058016922</td>     <td data-copy="/tp $">   7572 64 15572</td>     <td>6</td>              <td l></td></tr>
+            <tr><td> 7924</td>  <td data-copy="$">-1753019527780207745</td>     <td data-copy="/tp $"> 10132 64 -17052</td>     <td>7</td>              <td l></td></tr>
+            <tr><td> 7976</td>  <td data-copy="$">-7409198214802438280</td>     <td data-copy="/tp $">    -1452 62 628</td>     <td>1</td>              <td l></td></tr>
+            <tr><td> 7976</td>  <td data-copy="$">-7409198214802438280</td>     <td data-copy="/tp $">   -2492 64 5044</td>     <td>2</td>              <td l></td></tr>
+            <tr><td> 8024</td>  <td data-copy="$"> 3761933752129816564</td>     <td data-copy="/tp $">   6708 64 -4668</td>     <td>3</td>              <td l></td></tr>
+        </table>
+
+        <h3 id="surface-exposed-single">One Room (excl. Starter)</h3>
+        <table>
+            <tr><th>Run #</th>  <th>Seed</th>                                   <th>Coordinates</th>                            <th>SH Ring</th>        <th l>Notes</th></tr>
+            <tr><td>   28</td>  <td data-copy="$">-1321625267931558880</td>     <td data-copy="/tp $">  -20508 62 4788</td>     <td>7</td>              <td l>Library</td></tr>
+            <tr><td>  919</td>  <td data-copy="$"> 3731295726282401649</td>     <td data-copy="/tp $">  -8892 62 11460</td>     <td>5</td>              <td l>Library</td></tr>
+            <tr><td> 1191</td>  <td data-copy="$"> 5209053410265117953</td>     <td data-copy="/tp $">   14900 62 8356</td>     <td>6</td>              <td l>Library</td></tr>
+            <tr><td> 2027</td>  <td data-copy="$">-7511678398582157571</td>     <td data-copy="/tp $">   20180 64 3092</td>     <td>7</td>              <td l>Library</td></tr>
+            <tr><td> 2417</td>  <td data-copy="$"> 2061801431847100350</td>     <td data-copy="/tp $">  -18748 62 8196</td>     <td>7</td>              <td l>Library</td></tr>
+            <tr><td> 2482</td>  <td data-copy="$"> 5009065017658505942</td>     <td data-copy="/tp $">-17948 62 -10284</td>     <td>7</td>              <td l>Library</td></tr>
+            <tr><td> 2843</td>  <td data-copy="$">  633847650452713533</td>     <td data-copy="/tp $">   4452 62 -2540</td>     <td>2</td>              <td l>Library</td></tr>
+            <tr><td> 3388</td>  <td data-copy="$">-5780856156902758577</td>     <td data-copy="/tp $">   -3020 62 8212</td>     <td>3</td>              <td l>Library</td></tr>
+            <tr><td> 3459</td>  <td data-copy="$"> 2708349586504284831</td>     <td data-copy="/tp $">   20804 66 2788</td>     <td>7</td>              <td l>Library with exposed books</td></tr>
+            <tr><td> 3743</td>  <td data-copy="$"> 4082367597968415505</td>     <td data-copy="/tp $">  3876 62 -17468</td>     <td>6</td>              <td l>Library</td></tr>
+            <tr><td> 3882</td>  <td data-copy="$">-4332206825657115651</td>     <td data-copy="/tp $"> 15956 63 -12284</td>     <td>7</td>              <td l>Portal room</td></tr>
+            <tr><td> 4115</td>  <td data-copy="$"> 7740440747876087810</td>     <td data-copy="/tp $">  -2764 64 17652</td>     <td>6</td>              <td l>Library with exposed books</td></tr>
+            <tr><td> 4129</td>  <td data-copy="$">-1097780889244003728</td>     <td data-copy="/tp $">  6036 62 -16300</td>     <td>6</td>              <td l>Library</td></tr>
+            <tr><td> 4204</td>  <td data-copy="$">  548869866940927711</td>     <td data-copy="/tp $">    740 64 14260</td>     <td>5</td>              <td l>Library with exposed books</td></tr>
+            <tr><td> 4224</td>  <td data-copy="$"> -496041765870143587</td>     <td data-copy="/tp $">   16132 62 7604</td>     <td>6</td>              <td l>Library</td></tr>
+            <tr><td> 4349</td>  <td data-copy="$"> 6578020660561247468</td>     <td data-copy="/tp $">   3988 62 -7292</td>     <td>3</td>              <td l>Library. <a href="#fav-4349">This stronghold also has a water pool corrupted portal</a></td></tr>
+            <tr><td> 4526</td>  <td data-copy="$">-3457729043163300513</td>     <td data-copy="/tp $">    9188 64 7204</td>     <td>4</td>              <td l>Four-way</td></tr>
+            <tr><td> 5235</td>  <td data-copy="$">-3322417967058217572</td>     <td data-copy="/tp $">   -6236 62 5012</td>     <td>3</td>              <td l>Library</td></tr>
+            <tr><td> 5471</td>  <td data-copy="$">-6701570700301920378</td>     <td data-copy="/tp $"> -16556 64 -4652</td>     <td>6</td>              <td l>Library with exposed books</td></tr>
+            <tr><td> 5636</td>  <td data-copy="$">-8531689948191561017</td>     <td data-copy="/tp $">  13252 62 -6220</td>     <td>5</td>              <td l>Library</td></tr>
+            <tr><td> 5657</td>  <td data-copy="$"> 2132516933068740966</td>     <td data-copy="/tp $"> -22028 62 -7660</td>     <td>8</td>              <td l>Library (with ocean ruin on top)</td></tr>
+            <tr><td> 5751</td>  <td data-copy="$"> 1881645868065517383</td>     <td data-copy="/tp $">  3412 64 -17132</td>     <td>6</td>              <td l>Library with exposed books</td></tr>
+            <tr><td> 5851</td>  <td data-copy="$">-2949090954911209885</td>     <td data-copy="/tp $">  -2540 62 20068</td>     <td>7</td>              <td l>Library</td></tr>
+            <tr><td> 5919</td>  <td data-copy="$">-2362793812229369541</td>     <td data-copy="/tp $">   19892 62 2372</td>     <td>7</td>              <td l>Library</td></tr>
+            <tr><td> 5961</td>  <td data-copy="$">-3892204300281496814</td>     <td data-copy="/tp $"> -22988 64 -1132</td>     <td>8</td>              <td l>Library with exposed books</td></tr>
+            <tr><td> 6717</td>  <td data-copy="$"> 4313653503612334055</td>     <td data-copy="/tp $">   15012 64 7940</td>     <td>6</td>              <td l>Library</td></tr>
+            <tr><td> 6824</td>  <td data-copy="$">-1442296392726351606</td>     <td data-copy="/tp $"> -11436 62 19988</td>     <td>8</td>              <td l>Library</td></tr>
+            <tr><td> 6825</td>  <td data-copy="$">  654134933078252524</td>     <td data-copy="/tp $">   -9628 62 5172</td>     <td>4</td>              <td l>Four-way</td></tr>
+            <tr><td> 6842</td>  <td data-copy="$"> 8239416822711063686</td>     <td data-copy="/tp $">   3076 64 20708</td>     <td>7</td>              <td l>Library</td></tr>
+            <tr><td> 6942</td>  <td data-copy="$"> 1560671664676653969</td>     <td data-copy="/tp $">   3780 64 13924</td>     <td>5</td>              <td l>Library with exposed books</td></tr>
+            <tr><td> 6950</td>  <td data-copy="$"> 4989331792288167948</td>     <td data-copy="/tp $">  -1276 64 11204</td>     <td>4</td>              <td l>Library with exposed books</td></tr>
+            <tr><td> 7171</td>  <td data-copy="$"> 5542871139974592618</td>     <td data-copy="/tp $">   -5468 64 9860</td>     <td>4</td>              <td l>Library with exposed books</td></tr>
+            <tr><td> 7383</td>  <td data-copy="$"> 3594514810244705378</td>     <td data-copy="/tp $">  -16828 66 2740</td>     <td>6</td>              <td l>Library with exposed books. This is the same seed as the first stronghold first run</td></tr>
+            <tr><td> 7405</td>  <td data-copy="$">-8166594805270162564</td>     <td data-copy="/tp $">  -11500 62 8836</td>     <td>5</td>              <td l>Library</td></tr>
+            <tr><td> 7573</td>  <td data-copy="$"> 2411501926974615425</td>     <td data-copy="/tp $">   -3548 62 7108</td>     <td>3</td>              <td l>Library</td></tr>
+            <tr><td> 7608</td>  <td data-copy="$">  571914477477740596</td>     <td data-copy="/tp $">  -20844 62 2820</td>     <td>7</td>              <td l>Library</td></tr>
+            <tr><td> 7663</td>  <td data-copy="$">-7362839860775388304</td>     <td data-copy="/tp $">   7668 64 -1052</td>     <td>3</td>              <td l>Four-way</td></tr>
+            <tr><td> 7793</td>  <td data-copy="$"> 8704987495975873550</td>     <td data-copy="/tp $">   -2732 64 3892</td>     <td>2</td>              <td l>Library with exposed books</td></tr>
+            <tr><td> 7805</td>  <td data-copy="$"> 3774354443026263027</td>     <td data-copy="/tp $"> 12772 62 -11388</td>     <td>6</td>              <td l>Library</td></tr>
+            <tr><td> 8076</td>  <td data-copy="$"> 4310246591484804521</td>     <td data-copy="/tp $"> 14276 62 -14796</td>     <td>7</td>              <td l>Library</td></tr>
+        </table>
+        
+        <h3 id="surface-exposed-multiple">Multiple Rooms</h3>
+        <table>
+            <tr><th>Run #</th>  <th>Seed</th>                                   <th>Coordinates</th>                            <th>SH Ring</th>        <th l>Notes</th></tr>
+            <tr><td>   30</td>  <td data-copy="$"> 3918744176395531952</td>     <td data-copy="/tp $">   5204 64 20324</td>     <td>7</td>              <td l>Starter and library with exposed books</td></tr>
+            <tr><td>   68</td>  <td data-copy="$">7 820307628267216653</td>     <td data-copy="/tp $">    9700 64 6340</td>     <td>4</td>              <td l>Starter and library</td></tr>
+            <tr><td>  197</td>  <td data-copy="$"> 6034273453165935440</td>     <td data-copy="/tp $">   12292 64 7268</td>     <td>5</td>              <td l>Starter and library with exposed books</td></tr>
+            <tr><td>  611</td>  <td data-copy="$">  565754781532228084</td>     <td data-copy="/tp $">  20004 66 -1420</td>     <td>7</td>              <td l>Starter and both libraries with exposed books. <a href="#fav-611">This seed also has a seven eye</a></td></tr>
+            <tr><td>  742</td>  <td data-copy="$">  -65945119107507562</td>     <td data-copy="/tp $">  -10732 62 1332</td>     <td>4</td>              <td l>Starter and library</td></tr>
+            <tr><td>  985</td>  <td data-copy="$">-8758864919108930485</td>     <td data-copy="/tp $">  1316 64 -16956</td>     <td>6</td>              <td l>Starter and both libraries</td></tr>
+            <tr><td> 1632</td>  <td data-copy="$">-1367994001693664397</td>     <td data-copy="/tp $">  -6092 66 -4748</td>     <td>3</td>              <td l>Starter and library with exposed books</td></tr>
+            <tr><td> 2176</td>  <td data-copy="$"> 7366803376285618777</td>     <td data-copy="/tp $"> -9068 64 -15500</td>     <td>6</td>              <td l>Both libraries with exposed books</td></tr>
+            <tr><td> 2372</td>  <td data-copy="$"> 3235247295262144578</td>     <td data-copy="/tp $">   2564 66 13540</td>     <td>5</td>              <td l>Starter, four-way, and both libraries with exposed books. On edge of a mushroom biome</td></tr>
+            <tr><td> 2760</td>  <td data-copy="$"> 8476639034411982759</td>     <td data-copy="/tp $">  6692 62 -19532</td>     <td>7</td>              <td l>Both libraries. <a href="#fav-2760">Part of this stronghold can be seen on a buried treasure map</a></td></tr>
+            <tr><td> 2924</td>  <td data-copy="$">-4447191293639247098</td>     <td data-copy="/tp $">  14500 64 13940</td>     <td>7</td>              <td l>Both libraries, one with exposed books. Mostly covered by terrain</td></tr>
+            <tr><td> 3335</td>  <td data-copy="$"> -260046553236462408</td>     <td data-copy="/tp $">  -15724 64 8356</td>     <td>6</td>              <td l>Portal room and library with exposed books</td></tr>
+            <tr><td> 3913</td>  <td data-copy="$">-5360424498227451635</td>     <td data-copy="/tp $">    340 66 17268</td>     <td>6</td>              <td l>Starter and library with exposed books</td></tr>
+            <tr><td> 4360</td>  <td data-copy="$">-7424192833989121167</td>     <td data-copy="/tp $"> -9228 64 -14284</td>     <td>6</td>              <td l>Starter and library with exposed books</td></tr>
+            <tr><td> 4507</td>  <td data-copy="$">-8996968646678122714</td>     <td data-copy="/tp $"> 12196 62 -16316</td>     <td>7</td>              <td l>Starter and library</td></tr>
+            <tr><td> 4658</td>  <td data-copy="$"> 5906941115923336803</td>     <td data-copy="/tp $"> -6812 62 -19996</td>     <td>7</td>              <td l>Starter and library</td></tr>
+            <tr><td> 4866</td>  <td data-copy="$"> 4310976224864012577</td>     <td data-copy="/tp $">  3332 64 -20156</td>     <td>7</td>              <td l>Starter and library with exposed books</td></tr>
+            <tr><td> 5019</td>  <td data-copy="$">-1541705946544496011</td>     <td data-copy="/tp $">  -5404 66 19172</td>     <td>7</td>              <td l>Both libraries with exposed books</td></tr>
+            <tr><td> 5041</td>  <td data-copy="$">-7719054825564128553</td>     <td data-copy="/tp $"> -10332 64 13428</td>     <td>6</td>              <td l>Starter and library with exposed books</td></tr>
+            <tr><td> 5218</td>  <td data-copy="$"> 8298830932429730309</td>     <td data-copy="/tp $">  19476 64 14212</td>     <td>8</td>              <td l>Starter, four-way, and portal room</td></tr>
+            <tr><td> 5274</td>  <td data-copy="$">-2752019995354910122</td>     <td data-copy="/tp $">  -2492 62 -7372</td>     <td>3</td>              <td l>Both libraries. <a href="#fav-5274">This seed also includes a seven eye</a></td></tr>
+            <tr><td> 5440</td>  <td data-copy="$"> 8843503116462795937</td>     <td data-copy="/tp $">  -2556 66 -7852</td>     <td>3</td>              <td l>Library with exposed books, fountain room, two five-ways, staircase, T-junction, and three corners</td></tr>
+            <tr><td> 5458</td>  <td data-copy="$">-4168035932772390290</td>     <td data-copy="/tp $">  16356 62 11380</td>     <td>7</td>              <td l>Starter and library</td></tr>
+            <tr><td> 5570</td>  <td data-copy="$"> 2328409167379343193</td>     <td data-copy="/tp $">  20212 62 -1676</td>     <td>7</td>              <td l>Starter and library</td></tr>
+            <tr><td> 5756</td>  <td data-copy="$"> -581331022897986943</td>     <td data-copy="/tp $">  7700 63 -11324</td>     <td>5</td>              <td l>Starter and portal room</td></tr>
+            <tr><td> 5863</td>  <td data-copy="$">-7742397090197587201</td>     <td data-copy="/tp $">   18868 64 6980</td>     <td>7</td>              <td l>Starter and library with exposed books</td></tr>
+            <tr><td> 5906</td>  <td data-copy="$"> 7023712055165813854</td>     <td data-copy="/tp $"> -4412 64 -16844</td>     <td>6</td>              <td l>Starter and both libraries</td></tr>
+            <tr><td> 5925</td>  <td data-copy="$">-1140061947131346106</td>     <td data-copy="/tp $">   12468 66 6068</td>     <td>5</td>              <td l>Starter, portal room, both libraries with exposed books, two fountains, and four-way</td></tr>
+            <tr><td> 6148</td>  <td data-copy="$">  618969216540301141</td>     <td data-copy="/tp $">   -7740 62 3172</td>     <td>3</td>              <td l>Starter and library</td></tr>
+            <tr><td> 6171</td>  <td data-copy="$">-4700029446053961834</td>     <td data-copy="/tp $">    2916 64 8164</td>     <td>3</td>              <td l>Starter and portal room</td></tr>
+            <tr><td> 6194</td>  <td data-copy="$"> 7482366078389313179</td>     <td data-copy="/tp $">  16900 64 10836</td>     <td>7</td>              <td l>Starter and library with exposed books</td></tr>
+            <tr><td> 6294</td>  <td data-copy="$"> 2903761188204228678</td>     <td data-copy="/tp $">   -7628 66 -732</td>     <td>3</td>              <td l>Starter and library with exposed books. Also a village</td></tr>
+            <tr><td> 6307</td>  <td data-copy="$"> 2196689589975734605</td>     <td data-copy="/tp $">   -1244 62 8276</td>     <td>3</td>              <td l>Starter and library</td></tr>
+            <tr><td> 6614</td>  <td data-copy="$"> 3272540385005145159</td>     <td data-copy="/tp $">   5588 64 -6428</td>     <td>3</td>              <td l>Starter and portal room</td></tr>
+            <tr><td> 6994</td>  <td data-copy="$">  611295032858651460</td>     <td data-copy="/tp $">    -7740 64 484</td>     <td>3</td>              <td l>Starter and library with exposed books</td></tr>
+            <tr><td> 7092</td>  <td data-copy="$"> 4066812876193092928</td>     <td data-copy="/tp $">   19028 64 8244</td>     <td>7</td>              <td l>Starter and both libraries with exposed books</td></tr>
+            <tr><td> 7458</td>  <td data-copy="$">-5526639092309788781</td>     <td data-copy="/tp $"> -14908 62 -9660</td>     <td>6</td>              <td l>Starter and library</td></tr>
+            <tr><td> 7635</td>  <td data-copy="$">-3274086327828150116</td>     <td data-copy="/tp $"> 13332 66 -15084</td>     <td>7</td>              <td l>Portal room and library with exposed books</td></tr>
+            <tr><td> 7916</td>  <td data-copy="$">-6045646535868028062</td>     <td data-copy="/tp $"> -3340 64 -10364</td>     <td>4</td>              <td l>Both libraries with exposed books</td></tr>
+            <tr><td> 7942</td>  <td data-copy="$"> 3710556781786647015</td>     <td data-copy="/tp $"> -14748 66 14260</td>     <td>7</td>              <td l>Starter, five-way, and library with exposed books</td></tr>
+            <tr><td> 7985</td>  <td data-copy="$"> 4913062118850893073</td>     <td data-copy="/tp $">  -3468 64 -6780</td>     <td>3</td>              <td l>Starter and both libraries</td></tr>
+            <tr><td> 8099</td>  <td data-copy="$">-4660954683159039673</td>     <td data-copy="/tp $">   16388 66 4388</td>     <td>6</td>              <td l>Portal room and library with exposed books</td></tr>
+            <tr><td> 8192</td>  <td data-copy="$">-6461676017161330754</td>     <td data-copy="/tp $">  -20028 64 2212</td>     <td>7</td>              <td l>Starter and library</td></tr>
+        </table>
+    </section>
+    
+    
+    
+    <section>
+        <h2 id="corrupted">Corrupted Portals</h2>
+        <p>I've found a total of <b>191</b> corrupted portals, across <b>187</b> seeds. Of these, <b>four</b> were in the first ring. This gives the experimental odds of a portal being corrupted as roughly <b data-tippy-content="These are experimental odds, and will change every new run as the total number of strongholds searched changes">1 in 5,377</b>.</p>
+        <p>The most corrupted portals in one seed so far was <b>2</b>, which happened in <b>4</b> seeds.</p>
+        <p class="disclaimer">These tables were produced by a manual verification of any where the automatic scan failed to find 12 portal frames, and were categorised by me based on the obvious cause of corruption. As overlapping structure generation is very dependent on chunk load order, corrupted portals can generate differently depending on which direction they are approached from, which can cause different numbers of frames to exist, of prevent the portal from corrupting entirely. <b>Other corruptable portals which are highly directional will exist which were not captured by the current iteration of this code</b>, for example the <a href="https://youtu.be/bgLrn-aITYg">one found during run #6542</a> which my code did not pick up. For reference, my code queues chunks for generation starting at chunk -2 -2 from the centre of the portal, loading along the z axis until +2, increasing x, and continuing until reaching +2 +2.</p>
+        
+        <h3 id="corrupted-lava">Lava Pool</h3>
+        <p>I've found a total of <b>116</b> portals corrupted by a lava pool, making up <b>60.73%</b> of all corruptions. This gives experimental odds of <b>1 in 8,853</b> portals being lava pool corrupted.</p></p>
+        <table>
+            <tr><th>Run #</th>  <th>Seed</th>                   <th>Coordinates</th>                <th>SH Ring</th>    <th><span data-tippy-content="Number of portal frames which correctly generated when I checked the seed. This is usually quite directional and may vary depending on how you load the chunks">Frames</span></th>  <th l>Notes</th></tr>
+            <tr><td>34</td> <td data-copy="$">4848986182493349870</td> <td data-copy="/tp $">9303 23 11188</td> <td>5</td> <td>10</td> <td></td></tr>
+            <tr><td>71</td> <td data-copy="$">5098671578641942159</td> <td data-copy="/tp $">13781 29 1830</td> <td>5</td> <td>6</td> <td></td></tr>
+            <tr><td>73</td> <td data-copy="$">-7587306204300052179</td> <td data-copy="/tp $">-13824 38 19044</td> <td>8</td> <td>9</td> <td></td></tr>
+            <tr><td>147</td> <td data-copy="$">2649791099354411258</td> <td data-copy="/tp $">8531 15 -15222</td> <td>6</td> <td>3</td> <td></td></tr>
+            <tr><td>153</td> <td data-copy="$">3974643347048542514</td> <td data-copy="/tp $">20467 15 -3403</td> <td>7</td> <td>6</td> <td></td></tr>
+            <tr><td>170</td> <td data-copy="$">228093915284309607</td> <td data-copy="/tp $">10703 31 17108</td> <td>7</td> <td>6</td> <td></td></tr>
+            <tr><td>251</td> <td data-copy="$">-8212813600331619631</td> <td data-copy="/tp $">-5693 29 -6044</td> <td>3</td> <td>11</td> <td></td></tr>
+            <tr><td>264</td> <td data-copy="$">-2385903713252573027</td> <td data-copy="/tp $">3319 32 -7874</td> <td>3</td> <td>11</td> <td></td></tr>
+            <tr><td>288</td> <td data-copy="$">-5866051592593005528</td> <td data-copy="/tp $">2625 35 14165</td> <td>5</td> <td>10</td> <td></td></tr>
+            <tr><td>563</td> <td data-copy="$">-431307180117302737</td> <td data-copy="/tp $">16989 40 -10973</td> <td>7</td> <td>0</td> <td></td></tr>
+            <tr><td>588</td> <td data-copy="$">-6322490023438955049</td> <td data-copy="/tp $">-18093 13 9947</td> <td>7</td> <td>9</td> <td></td></tr>
+            <tr><td>626</td> <td data-copy="$">-2303267203521768419</td> <td data-copy="/tp $">8225 41 -1241</td> <td>3</td> <td>10</td> <td></td></tr>
+            <tr><td>742</td> <td data-copy="$">-65945119107507562</td> <td data-copy="/tp $">-8702 32 10970</td> <td>5</td> <td>8</td> <td></td></tr>
+            <tr><td>974</td> <td data-copy="$">7498876787169051725</td> <td data-copy="/tp $">15165 37 8088</td> <td>6</td> <td>9</td> <td></td></tr>
+            <tr><td>983</td> <td data-copy="$">-8358592389198663345</td> <td data-copy="/tp $">7059 38 -19400</td> <td>7</td> <td>10</td> <td></td></tr>
+            <tr><td>996</td> <td data-copy="$">-6516633147356600859</td> <td data-copy="/tp $">5327 28 -15978</td> <td>6</td> <td>11</td> <td></td></tr>
+            <tr><td>1076</td> <td data-copy="$">334629707317839580</td> <td data-copy="/tp $">17258 33 -1697</td> <td>6</td> <td>0</td> <td></td></tr>
+            <tr><td>1126</td> <td data-copy="$">-4149190134636773236</td> <td data-copy="/tp $">-17228 32 -3739</td> <td>6</td> <td>7</td> <td></td></tr>
+            <tr><td>1391</td> <td data-copy="$">2727798673968878773</td> <td data-copy="/tp $">-4588 28 -13444</td> <td>5</td> <td>9</td> <td></td></tr>
+            <tr><td>1395</td> <td data-copy="$">-955371609392356785</td> <td data-copy="/tp $">-18873 26 7840</td> <td>7</td> <td>5</td> <td></td></tr>
+            <tr><td>1425</td> <td data-copy="$">6791172620920989463</td> <td data-copy="/tp $">9734 32 14900</td> <td>6</td> <td>6</td> <td></td></tr>
+            <tr><td>1431</td> <td data-copy="$">58219362219735205</td> <td data-copy="/tp $">-1406 45 5440</td> <td>2</td> <td>11</td> <td></td></tr>
+            <tr><td>1518</td> <td data-copy="$">4229438102469946587</td> <td data-copy="/tp $">3605 24 -19978</td> <td>7</td> <td>3</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>1617</td> <td data-copy="$">-2638963891703767164</td> <td data-copy="/tp $">-3884 27 -16619</td> <td>6</td> <td>9</td> <td></td></tr>
+            <tr><td>1625</td> <td data-copy="$">6620187252433957805</td> <td data-copy="/tp $">553 33 -14910</td> <td>5</td> <td>9</td> <td></td></tr>
+            <tr><td>1767</td> <td data-copy="$">7097638513850745691</td> <td data-copy="/tp $">-5705 22 5191</td> <td>3</td> <td>8</td> <td></td></tr>
+            <tr><td>1797</td> <td data-copy="$">-793658972590787854</td> <td data-copy="/tp $">-3702 26 -6812</td> <td>3</td> <td>4</td> <td></td></tr>
+            <tr><td>1993</td> <td data-copy="$">4826092475387484172</td> <td data-copy="/tp $">3154 27 -13475</td> <td>5</td> <td>5</td> <td l>Includes non-flowing lava</td></tr>
+            <tr><td>2027</td> <td data-copy="$">-7511678398582157571</td> <td data-copy="/tp $">16950 35 2812</td> <td>6</td> <td>1</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>2083</td> <td data-copy="$">6442298841430556946</td> <td data-copy="/tp $">-13549 26 -10361</td> <td>6</td> <td>5</td> <td></td></tr>
+            <tr><td>2098</td> <td data-copy="$">-1203179333053506227</td> <td data-copy="/tp $">17875 11 1055</td> <td>6</td> <td>11</td> <td></td></tr>
+            <tr><td>2215</td> <td data-copy="$">-5871373149910487351</td> <td data-copy="/tp $">7975 39 -18093</td> <td>7</td> <td>8</td> <td></td></tr>
+            <tr><td>2221</td> <td data-copy="$">-4389021470826484645</td> <td data-copy="/tp $">13409 16 19154</td> <td>8</td> <td>9</td> <td></td></tr>
+            <tr><td>2236</td> <td data-copy="$">-4715348467757886023</td> <td data-copy="/tp $">13523 19 -3441</td> <td>5</td> <td>8</td> <td></td></tr>
+            <tr><td>2388</td> <td data-copy="$">-5333097559553048328</td> <td data-copy="/tp $">-13992 24 355</td> <td>5</td> <td>2</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>2428</td> <td data-copy="$">6553932721594825808</td> <td data-copy="/tp $">8212 33 7136</td> <td>4</td> <td>11</td> <td></td></tr>
+            <tr><td>2470</td> <td data-copy="$">-2980854093792687274</td> <td data-copy="/tp $">13716 30 14520</td> <td>7</td> <td>5</td> <td></td></tr>
+            <tr><td>2507</td> <td data-copy="$">2163439028790471889</td> <td data-copy="/tp $">14097 43 14356</td> <td>7</td> <td>11</td> <td></td></tr>
+            <tr><td>2525</td> <td data-copy="$">-1236192028675924873</td> <td data-copy="/tp $">-8171 12 -478</td> <td>3</td> <td>0</td> <td></td></tr>
+            <tr><td>2530</td> <td data-copy="$">8261239638101842727</td> <td data-copy="/tp $">17174 22 1737</td> <td>6</td> <td>3</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>2554</td> <td data-copy="$">-523908685618168552</td> <td data-copy="/tp $">-14573 24 15119</td> <td>7</td> <td>6</td> <td></td></tr>
+            <tr><td>2741</td> <td data-copy="$">-6390922152823022108</td> <td data-copy="/tp $">11700 33 17530</td> <td>7</td> <td>2</td> <td></td></tr>
+            <tr><td>3074</td> <td data-copy="$">-5231777562628270939</td> <td data-copy="/tp $">-16045 27 11722</td> <td>7</td> <td>7</td> <td></td></tr>
+            <tr><td>3208</td> <td data-copy="$">-6963901439821784193</td> <td data-copy="/tp $">-5967 15 -19758</td> <td>7</td> <td>6</td> <td></td></tr>
+            <tr><td>3217</td> <td data-copy="$">6128873807643845074</td> <td data-copy="/tp $">13607 31 -3910</td> <td>5</td> <td>11</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>3224</td> <td data-copy="$">514407237628225396</td> <td data-copy="/tp $">-4285 12 22958</td> <td>8</td> <td>9</td> <td></td></tr>
+            <tr><td>3414</td> <td data-copy="$">8105760284587415586</td> <td data-copy="/tp $">-4788 39 20582</td> <td>7</td> <td>11</td> <td></td></tr>
+            <tr><td>3418</td> <td data-copy="$">-7109064473276143828</td> <td data-copy="/tp $">1210 26 7901</td> <td>3</td> <td>8</td> <td></td></tr>
+            <tr><td>3427</td> <td data-copy="$">3068630492044634608</td> <td data-copy="/tp $">-18459 17 -15379</td> <td>8</td> <td>2</td> <td></td></tr>
+            <tr><td>3542</td> <td data-copy="$">9050453767186870953</td> <td data-copy="/tp $">-7134 29 4159</td> <td>3</td> <td>9</td> <td l><a href="#fav-3542">This seed also includes a water pool corrupted portal</a></td></tr>
+            <tr><td>3593</td> <td data-copy="$">6171979677366917104</td> <td data-copy="/tp $">-651 38 16842</td> <td>6</td> <td>6</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>3598</td> <td data-copy="$">1847632419195525355</td> <td data-copy="/tp $">18491 34 -8894</td> <td>7</td> <td>4</td> <td></td></tr>
+            <tr><td>3623</td> <td data-copy="$">-5291765666445919680</td> <td data-copy="/tp $">989 39 1141</td> <td>1</td> <td>6</td> <td></td></tr>
+            <tr><td>3627</td> <td data-copy="$">2107954719262530276</td> <td data-copy="/tp $">517 29 10801</td> <td>4</td> <td>4</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>3737</td> <td data-copy="$">7712477800187397274</td> <td data-copy="/tp $">-13569 12 2050</td> <td>5</td> <td>5</td> <td></td></tr>
+            <tr><td>3898</td> <td data-copy="$">-619536782865038842</td> <td data-copy="/tp $">-11563 8 345</td> <td>4</td> <td>7</td> <td></td></tr>
+            <tr><td>3931</td> <td data-copy="$">7763337480908220385</td> <td data-copy="/tp $">19260 10 -7949</td> <td>7</td> <td>7</td> <td></td></tr>
+            <tr><td>3997</td> <td data-copy="$">-4048132931498916847</td> <td data-copy="/tp $">5724 26 594</td> <td>2</td> <td>9</td> <td></td></tr>
+            <tr><td>4074</td> <td data-copy="$">6133251637781826979</td> <td data-copy="/tp $">-17857 20 -1918</td> <td>6</td> <td>7</td> <td></td></tr>
+            <tr><td>4205</td> <td data-copy="$">8233640027825030693</td> <td data-copy="/tp $">-16890 12 11428</td> <td>7</td> <td>2</td> <td></td></tr>
+            <tr><td>4269</td> <td data-copy="$">3162364565971163821</td> <td data-copy="/tp $">-3260 25 13560</td> <td>5</td> <td>8</td> <td></td></tr>
+            <tr><td>4375</td> <td data-copy="$">-678055738258400644</td> <td data-copy="/tp $">7337 40 -18414</td> <td>7</td> <td>11</td> <td></td></tr>
+            <tr><td>4457</td> <td data-copy="$">5724822349780896002</td> <td data-copy="/tp $">5999 37 19109</td> <td>7</td> <td>10</td> <td></td></tr>
+            <tr><td>4472</td> <td data-copy="$">-5267327850533579561</td> <td data-copy="/tp $">-11010 28 12883</td> <td>6</td> <td>7</td> <td></td></tr>
+            <tr><td>4545</td> <td data-copy="$">4873027360240708489</td> <td data-copy="/tp $">17304 28 -505</td> <td>6</td> <td>5</td> <td></td></tr>
+            <tr><td>4591</td> <td data-copy="$">5113875044167244545</td> <td data-copy="/tp $">-7622 44 -2934</td> <td>3</td> <td>4</td> <td></td></tr>
+            <tr><td>4653</td> <td data-copy="$">4632095824190741195</td> <td data-copy="/tp $">-18476 20 -9433</td> <td>7</td> <td>8</td> <td></td></tr>
+            <tr><td>4742</td> <td data-copy="$">-8599699718678094069</td> <td data-copy="/tp $">-3383 18 -13838</td> <td>5</td> <td>9</td> <td></td></tr>
+            <tr><td>4891</td> <td data-copy="$">-3806509108094429468</td> <td data-copy="/tp $">17512 35 1299</td> <td>6</td> <td>5</td> <td></td></tr>
+            <tr><td>4908</td> <td data-copy="$">-233552752730089363</td> <td data-copy="/tp $">-17719 26 8779</td> <td>7</td> <td>3</td> <td></td></tr>
+            <tr><td>5070</td> <td data-copy="$">5961259863162491827</td> <td data-copy="/tp $">-5792 31 148</td> <td>2</td> <td>11</td> <td></td></tr>
+            <tr><td>5155</td> <td data-copy="$">4171307399767307729</td> <td data-copy="/tp $">-17565 20 -11514</td> <td>7</td> <td>6</td> <td></td></tr>
+            <tr><td>5216</td> <td data-copy="$">8651526845899135972</td> <td data-copy="/tp $">1692 41 14851</td> <td>5</td> <td>9</td> <td></td></tr>
+            <tr><td>5230</td> <td data-copy="$">-6666296947065408133</td> <td data-copy="/tp $">-5962 13 -9595</td> <td>4</td> <td>4</td> <td></td></tr>
+            <tr><td>5246</td> <td data-copy="$">4723228145897505282</td> <td data-copy="/tp $">-1852 8 -7616</td> <td>3</td> <td>11</td> <td></td></tr>
+            <tr><td>5249</td> <td data-copy="$">-2760231024280645202</td> <td data-copy="/tp $">2371 14 -13986</td> <td>5</td> <td>9</td> <td></td></tr>
+            <tr><td>5262</td> <td data-copy="$">2104315162119502907</td> <td data-copy="/tp $">4150 20 -10783</td> <td>4</td> <td>10</td> <td></td></tr>
+            <tr><td>5268</td> <td data-copy="$">8140684042517542125</td> <td data-copy="/tp $">5286 15 -6919</td> <td>3</td> <td>7</td> <td></td></tr>
+            <tr><td>5311</td> <td data-copy="$">934067867887416908</td> <td data-copy="/tp $">2722 40 -20565</td> <td>7</td> <td>4</td> <td></td></tr>
+            <tr><td>5488</td> <td data-copy="$">1428593346213950797</td> <td data-copy="/tp $">19476 25 -13358</td> <td>8</td> <td>6</td> <td></td></tr>
+            <tr><td>5524</td> <td data-copy="$">-1822288074042018842</td> <td data-copy="/tp $">19077 20 -7070</td> <td>7</td> <td>10</td> <td></td></tr>
+            <tr><td>5558</td> <td data-copy="$">-8762782530299691333</td> <td data-copy="/tp $">-4208 29 13859</td> <td>5</td> <td>10</td> <td></td></tr>
+            <tr><td>5761</td> <td data-copy="$">7633035580267312646</td> <td data-copy="/tp $">-14133 25 -2252</td> <td>5</td> <td>8</td> <td></td></tr>
+            <tr><td>5923</td> <td data-copy="$">-4684262820619948549</td> <td data-copy="/tp $">-16594 27 -4458</td> <td>6</td> <td>1</td> <td></td></tr>
+            <tr><td>5935</td> <td data-copy="$">2230278900415141654</td> <td data-copy="/tp $">2094 16 -16889</td> <td>6</td> <td>7</td> <td></td></tr>
+            <tr><td>6011</td> <td data-copy="$">-5275662229226678028</td> <td data-copy="/tp $">-18623 36 -7645</td> <td>7</td> <td>11</td> <td></td></tr>
+            <tr><td>6199</td> <td data-copy="$">3708719904124873558</td> <td data-copy="/tp $">-5371 15 -6040</td> <td>3</td> <td>9</td> <td></td></tr>
+            <tr><td>6276</td> <td data-copy="$">5149252426461742371</td> <td data-copy="/tp $">1321 35 14226</td> <td>5</td> <td>9</td> <td></td></tr>
+            <tr><td>6317</td> <td data-copy="$">4405439733925863902</td> <td data-copy="/tp $">-15264 32 13589</td> <td>7</td> <td>10</td> <td></td></tr>
+            <tr><td>6351</td> <td data-copy="$">-147620519283519448</td> <td data-copy="/tp $">-6942 34 -8344</td> <td>4</td> <td>10</td> <td></td></tr>
+            <tr><td>6385</td> <td data-copy="$">-1687577989297838551</td> <td data-copy="/tp $">-18528 24 -7422</td> <td>7</td> <td>10</td> <td></td></tr>
+            <tr><td>6499</td> <td data-copy="$">7120184241674391818</td> <td data-copy="/tp $">2453 30 -733</td> <td>1</td> <td>11</td> <td></td></tr>
+            <tr><td>6542</td> <td data-copy="$">-9170637637248811655</td> <td data-copy="/tp $">1000 38 894</td> <td>1</td> <td>11</td> <td l class="positive">This was found during the run</td></tr>
+            <tr><td>6585</td> <td data-copy="$">8804374325081413216</td> <td data-copy="/tp $">-15521 38 12836</td> <td>7</td> <td>10</td> <td l><a href="#fav-6585">This seed also includes three six eyes</a></td></tr>
+            <tr><td>6637</td> <td data-copy="$">7639466485710515003</td> <td data-copy="/tp $">-3130 36 16939</td> <td>6</td> <td>10</td> <td></td></tr>
+            <tr><td>6682</td> <td data-copy="$">-539330315975932899</td> <td data-copy="/tp $">12179 27 -8741</td> <td>5</td> <td>9</td> <td></td></tr>
+            <tr><td>6834</td> <td data-copy="$">-8534260386193599346</td> <td data-copy="/tp $">-6430 31 22382</td> <td>8</td> <td>11</td> <td></td></tr>
+            <tr><td>6893</td> <td data-copy="$">-7078989150725660575</td> <td data-copy="/tp $">6657 35 -8109</td> <td>4</td> <td>11</td> <td l><a href="#fav-6893">This seed also includes a ruined portal corrupted portal</a></td></tr>
+            <tr><td>6967</td> <td data-copy="$">-36042474260236398</td> <td data-copy="/tp $">15763 32 7216</td> <td>6</td> <td>11</td> <td></td></tr>
+            <tr><td>6990</td> <td data-copy="$">-3694366364828734940</td> <td data-copy="/tp $">-14595 31 9940</td> <td>6</td> <td>4</td> <td></td></tr>
+            <tr><td>7014</td> <td data-copy="$">-1607216472184842388</td> <td data-copy="/tp $">550 42 -17494</td> <td>6</td> <td>9</td> <td></td></tr>
+            <tr><td>7108</td> <td data-copy="$">6664592002035108918</td> <td data-copy="/tp $">-13560 32 -4651</td> <td>5</td> <td>5</td> <td l><a href="#fav-7108">This seed also includes another lava pool corrupted portal</a></td></tr>
+            <tr><td>7108</td> <td data-copy="$">6664592002035108918</td> <td data-copy="/tp $">5596 30 9875</td> <td>4</td> <td>1</td> <td l><a href="#fav-7108">This seed also includes another lava pool corrupted portal</a></td></tr>
+            <tr><td>7125</td> <td data-copy="$">5001302270923765538</td> <td data-copy="/tp $">-16663 40 1904</td> <td>6</td> <td>10</td> <td></td></tr>
+            <tr><td>7126</td> <td data-copy="$">-4949662936816717612</td> <td data-copy="/tp $">-19127 16 -7678</td> <td>7</td> <td>6</td> <td></td></tr>
+            <tr><td>7252</td> <td data-copy="$">7173789334903765102</td> <td data-copy="/tp $">14750 43 -9532</td> <td>6</td> <td>8</td> <td></td></tr>
+            <tr><td>7443</td> <td data-copy="$">-2632072345697834093</td> <td data-copy="/tp $">-17245 31 3408</td> <td>6</td> <td>11</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>7468</td> <td data-copy="$">4062121018715218795</td> <td data-copy="/tp $">-16501 35 -11566</td> <td>7</td> <td>5</td> <td></td></tr>
+            <tr><td>7521</td> <td data-copy="$">-5952579052913257248</td> <td data-copy="/tp $">-19947 22 -1264</td> <td>7</td> <td>11</td> <td></td></tr>
+            <tr><td>7552</td> <td data-copy="$">4967213150840105928</td> <td data-copy="/tp $">1507 22 17040</td> <td>6</td> <td>10</td> <td></td></tr>
+            <tr><td>7828</td> <td data-copy="$">-7352039990844159218</td> <td data-copy="/tp $">-16097 27 -7067</td> <td>6</td> <td>10</td> <td></td></tr>
+            <tr><td>7868</td> <td data-copy="$">-7994364378933097862</td> <td data-copy="/tp $">-12098 26 -17229</td> <td>7</td> <td>9</td> <td></td></tr>
+            <tr><td>7874</td> <td data-copy="$">1100250978526643853</td> <td data-copy="/tp $">17204 44 -9958</td> <td>7</td> <td>7</td> <td></td></tr>
+            <tr><td>7885</td> <td data-copy="$">-1807872688967743749</td> <td data-copy="/tp $">-11822 15 -1041</td> <td>4</td> <td>11</td> <td l><a href="#fav-7885">This seed also includes a water pool corrupted portal</a></td></tr>
+            <tr><td>8143</td> <td data-copy="$">-945642708575986957</td> <td data-copy="/tp $">2902 25 13999</td> <td>5</td> <td>10</td> <td></td></tr>
+            <tr><td>8196</td> <td data-copy="$">-9002665667448424419</td> <td data-copy="/tp $">-10969 24 17318</td> <td>7</td> <td>7</td> <td></td></tr>
+        </table>
+        
+        <h3 id="corrupted-water">Water Pool</h3>
+        <p>I've found a total of <b>41</b> portals corrupted by a water pool, making up <b>21.47%</b> of all corruptions. This gives experimental odds of <b>1 in 25,047</b> portals being water pool corrupted.</p></p>
+        <table>
+            <tr><th>Run #</th>  <th>Seed</th>                   <th>Coordinates</th>                <th>SH Ring</th>    <th><span data-tippy-content="Number of portal frames which correctly generated when I checked the seed. This is usually quite directional and may vary depending on how you load the chunks">Frames</span></th>  <th l>Notes</th></tr>
+            <tr><td>543</td> <td data-copy="$">-5813712112078435144</td> <td data-copy="/tp $">12205 31 -7501</td> <td>5</td> <td>9</td> <td></td></tr>
+            <tr><td>544</td> <td data-copy="$">8095459954546440060</td> <td data-copy="/tp $">-5798 22 -13292</td> <td>5</td> <td>8</td> <td></td></tr>
+            <tr><td>547</td> <td data-copy="$">-8388123994952107243</td> <td data-copy="/tp $">13364 41 -3867</td> <td>5</td> <td>7</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>842</td> <td data-copy="$">-8445609694756516587</td> <td data-copy="/tp $">14044 29 -3791</td> <td>5</td> <td>11</td> <td></td></tr>
+            <tr><td>964</td> <td data-copy="$">-885537932642349575</td> <td data-copy="/tp $">3092 36 20908</td> <td>7</td> <td>9</td> <td></td></tr>
+            <tr><td>1061</td> <td data-copy="$">1914844696005908184</td> <td data-copy="/tp $">-9658 33 -18027</td> <td>7</td> <td>4</td> <td></td></tr>
+            <tr><td>1422</td> <td data-copy="$">-51643836140508535</td> <td data-copy="/tp $">226 35 -1837</td> <td>1</td> <td>9</td> <td></td></tr>
+            <tr><td>1616</td> <td data-copy="$">2879352732844740413</td> <td data-copy="/tp $">19820 43 6678</td> <td>7</td> <td>8</td> <td></td></tr>
+            <tr><td>1831</td> <td data-copy="$">1693925632268675241</td> <td data-copy="/tp $">6870 42 15647</td> <td>6</td> <td>11</td> <td></td></tr>
+            <tr><td>1846</td> <td data-copy="$">1085793451483589633</td> <td data-copy="/tp $">11546 29 16972</td> <td>7</td> <td>11</td> <td></td></tr>
+            <tr><td>1966</td> <td data-copy="$">3819945112513223248</td> <td data-copy="/tp $">4013 41 20200</td> <td>7</td> <td>9</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>2046</td> <td data-copy="$">-3723393487595896835</td> <td data-copy="/tp $">10586 19 -17996</td> <td>7</td> <td>4</td> <td></td></tr>
+            <tr><td>2841</td> <td data-copy="$">-3770665123262725016</td> <td data-copy="/tp $">-6684 26 9778</td> <td>4</td> <td>6</td> <td></td></tr>
+            <tr><td>3273</td> <td data-copy="$">613159862112665233</td> <td data-copy="/tp $">8946 24 -15094</td> <td>6</td> <td>5</td> <td></td></tr>
+            <tr><td>3535</td> <td data-copy="$">-9102007712914984440</td> <td data-copy="/tp $">-1610 36 -148</td> <td>1</td> <td>5</td> <td></td></tr>
+            <tr><td>3542</td> <td data-copy="$">9050453767186870953</td> <td data-copy="/tp $">11514 34 -8567</td> <td>5</td> <td>10</td> <td l><a href="#fav-3542">This seed also includes a lava pool corrupted portal</a></td></tr>
+            <tr><td>3570</td> <td data-copy="$">2425139892571704729</td> <td data-copy="/tp $">5077 22 13290</td> <td>5</td> <td>7</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>3780</td> <td data-copy="$">8437286733488927438</td> <td data-copy="/tp $">14260 18 -13931</td> <td>7</td> <td>7</td> <td></td></tr>
+            <tr><td>3826</td> <td data-copy="$">5189348751792158469</td> <td data-copy="/tp $">-2141 35 23547</td> <td>8</td> <td>7</td> <td></td></tr>
+            <tr><td>3864</td> <td data-copy="$">7953372679077316676</td> <td data-copy="/tp $">1927 38 10684</td> <td>4</td> <td>0</td> <td></td></tr>
+            <tr><td>3927</td> <td data-copy="$">423014776323732829</td> <td data-copy="/tp $">-13848 41 -10062</td> <td>6</td> <td>8</td> <td></td></tr>
+            <tr><td>3975</td> <td data-copy="$">-2255293516406495865</td> <td data-copy="/tp $">23911 23 -2250</td> <td>8</td> <td>5</td> <td></td></tr>
+            <tr><td>4036</td> <td data-copy="$">-5674840740934800492</td> <td data-copy="/tp $">16921 20 -1963</td> <td>6</td> <td>11</td> <td></td></tr>
+            <tr><td>4283</td> <td data-copy="$">-174411556608473160</td> <td data-copy="/tp $">-5784 28 -23182</td> <td>8</td> <td>4</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>4349</td> <td data-copy="$">6578020660561247468</td> <td data-copy="/tp $">4014 55 -7323</td> <td>3</td> <td>10</td> <td l><a href="#fav-4349">This stronghold is also surface exposed</a></td></tr>
+            <tr><td>4560</td> <td data-copy="$">-2186299751946916713</td> <td data-copy="/tp $">1114 25 7766</td> <td>3</td> <td>6</td> <td></td></tr>
+            <tr><td>4767</td> <td data-copy="$">6831304144056919712</td> <td data-copy="/tp $">11564 28 -13758</td> <td>6</td> <td>9</td> <td></td></tr>
+            <tr><td>4792</td> <td data-copy="$">-6199722346119935955</td> <td data-copy="/tp $">-4411 28 -23271</td> <td>8</td> <td>6</td> <td></td></tr>
+            <tr><td>5295</td> <td data-copy="$">828700831334581473</td> <td data-copy="/tp $">1418 37 -13757</td> <td>5</td> <td>5</td> <td></td></tr>
+            <tr><td>5418</td> <td data-copy="$">817784391394435517</td> <td data-copy="/tp $">-12075 28 -12585</td> <td>6</td> <td>3</td> <td></td></tr>
+            <tr><td>5466</td> <td data-copy="$">-5843024495148427421</td> <td data-copy="/tp $">-16413 36 -6221</td> <td>6</td> <td>6</td> <td></td></tr>
+            <tr><td>6069</td> <td data-copy="$">1160771582679176739</td> <td data-copy="/tp $">7602 35 8969</td> <td>4</td> <td>11</td> <td></td></tr>
+            <tr><td>6470</td> <td data-copy="$">-5606823660498471563</td> <td data-copy="/tp $">427 30 17798</td> <td>6</td> <td>9</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>6702</td> <td data-copy="$">2666127761053788327</td> <td data-copy="/tp $">-16410 26 -4709</td> <td>6</td> <td>2</td> <td></td></tr>
+            <tr><td>6928</td> <td data-copy="$">8886307646794446061</td> <td data-copy="/tp $">-2943 33 20850</td> <td>7</td> <td>9</td> <td></td></tr>
+            <tr><td>7373</td> <td data-copy="$">-6409765296175641170</td> <td data-copy="/tp $">6868 32 -8117</td> <td>4</td> <td>11</td> <td></td></tr>
+            <tr><td>7484</td> <td data-copy="$">-1769709412561266508</td> <td data-copy="/tp $">4038 38 6607</td> <td>3</td> <td>9</td> <td></td></tr>
+            <tr><td>7630</td> <td data-copy="$">2698525804286683986</td> <td data-copy="/tp $">14454 34 -9949</td> <td>6</td> <td>3</td> <td></td></tr>
+            <tr><td>7716</td> <td data-copy="$">-1154663353278027006</td> <td data-copy="/tp $">5169 21 10722</td> <td>4</td> <td>10</td> <td></td></tr>
+            <tr><td>7885</td> <td data-copy="$">-1807872688967743749</td> <td data-copy="/tp $">-12811 34 6765</td> <td>5</td> <td>2</td> <td l><a href="#fav-7885">This seed also includes a lava pool corrupted portal</a></td></tr>
+            <tr><td>7961</td> <td data-copy="$">-8905506983820067848</td> <td data-copy="/tp $">-6537 29 19666</td> <td>7</td> <td>9</td> <td></td></tr>
+        </table>
+        
+        <h3 id="corrupted-ruined-portal">Ruined Portal</h3>
+        <p>I've found a total of <b>34</b> portals corrupted by a ruined portal, making up <b>17.80%</b> of all corruptions. This gives experimental odds of <b>1 in 30,204</b> portals being ruined portal corrupted.</p></p>
+        <table>
+            <tr><th>Run #</th>  <th>Seed</th>                   <th>Coordinates</th>                <th>SH Ring</th>    <th><span data-tippy-content="Number of portal frames which correctly generated when I checked the seed. This is usually quite directional and may vary depending on how you load the chunks">Frames</span></th>  <th l>Notes</th></tr>
+            <tr><td>128</td> <td data-copy="$">-4913389986486611097</td> <td data-copy="/tp $">7206 38 15733</td> <td>6</td> <td>8</td> <td></td></tr>
+            <tr><td>609</td> <td data-copy="$">-6427317002414137637</td> <td data-copy="/tp $">-13298 37 -5574</td> <td>5</td> <td>9</td> <td></td></tr>
+            <tr><td>1323</td> <td data-copy="$">-6928301103585843433</td> <td data-copy="/tp $">20494 31 79</td> <td>7</td> <td>10</td> <td></td></tr>
+            <tr><td>1787</td> <td data-copy="$">-9152684754128200449</td> <td data-copy="/tp $">9810 39 -10178</td> <td>5</td> <td>3</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>2168</td> <td data-copy="$">-1445255509347135040</td> <td data-copy="/tp $">-3728 36 -3603</td> <td>2</td> <td>8</td> <td l class="positive">This was found during the run</td></tr>
+            <tr><td>2194</td> <td data-copy="$">-5095795683472625029</td> <td data-copy="/tp $">-11353 31 1911</td> <td>4</td> <td>4</td> <td></td></tr>
+            <tr><td>2520</td> <td data-copy="$">2894161582561916849</td> <td data-copy="/tp $">-1873 30 -20849</td> <td>7</td> <td>11</td> <td></td></tr>
+            <tr><td>3185</td> <td data-copy="$">486206110840972235</td> <td data-copy="/tp $">3876 26 -3654</td> <td>2</td> <td>11</td> <td></td></tr>
+            <tr><td>3283</td> <td data-copy="$">-1320785030685201824</td> <td data-copy="/tp $">-5622 33 9660</td> <td>4</td> <td>11</td> <td></td></tr>
+            <tr><td>3419</td> <td data-copy="$">-898391404072821940</td> <td data-copy="/tp $">-10871 37 18204</td> <td>7</td> <td>11</td> <td></td></tr>
+            <tr><td>3457</td> <td data-copy="$">3431115021011932964</td> <td data-copy="/tp $">-8192 31 -11202</td> <td>5</td> <td>11</td> <td></td></tr>
+            <tr><td>3697</td> <td data-copy="$">-1946745292124910648</td> <td data-copy="/tp $">-14602 22 -2435</td> <td>5</td> <td>11</td> <td></td></tr>
+            <tr><td>3791</td> <td data-copy="$">549754818729604582</td> <td data-copy="/tp $">-11471 26 -1070</td> <td>4</td> <td>11</td> <td></td></tr>
+            <tr><td>4078</td> <td data-copy="$">3740919618254793007</td> <td data-copy="/tp $">17450 37 -1078</td> <td>6</td> <td>10</td> <td></td></tr>
+            <tr><td>4263</td> <td data-copy="$">6314405321541851666</td> <td data-copy="/tp $">-17825 24 -11246</td> <td>7</td> <td>6</td> <td></td></tr>
+            <tr><td>4547</td> <td data-copy="$">-3256035682253818768</td> <td data-copy="/tp $">1648 20 -19805</td> <td>7</td> <td>11</td> <td></td></tr>
+            <tr><td>4870</td> <td data-copy="$">6204619757342573411</td> <td data-copy="/tp $">8016 33 2079</td> <td>3</td> <td>10</td> <td></td></tr>
+            <tr><td>4889</td> <td data-copy="$">-7300923674795335566</td> <td data-copy="/tp $">8006 41 -8697</td> <td>4</td> <td>4</td> <td l>Also missing silverfish spawner</td></tr>
+            <tr><td>5050</td> <td data-copy="$">5657055978131682863</td> <td data-copy="/tp $">10471 31 9919</td> <td>5</td> <td>5</td> <td></td></tr>
+            <tr><td>5196</td> <td data-copy="$">7968975570650074283</td> <td data-copy="/tp $">-18843 37 -9224</td> <td>7</td> <td>11</td> <td></td></tr>
+            <tr><td>5391</td> <td data-copy="$">1548744855257165095</td> <td data-copy="/tp $">-22819 34 4565</td> <td>8</td> <td>10</td> <td></td></tr>
+            <tr><td>5586</td> <td data-copy="$">-3581049563596713690</td> <td data-copy="/tp $">4032 15 -19784</td> <td>7</td> <td>11</td> <td></td></tr>
+            <tr><td>5778</td> <td data-copy="$">4016923219578607853</td> <td data-copy="/tp $">-4775 44 1378</td> <td>2</td> <td>0</td> <td></td></tr>
+            <tr><td>5992</td> <td data-copy="$">8148275948756662379</td> <td data-copy="/tp $">-20285 39 -5482</td> <td>7</td> <td>11</td> <td></td></tr>
+            <tr><td>6490</td> <td data-copy="$">-5965066449159186342</td> <td data-copy="/tp $">-4123 28 -16397</td> <td>6</td> <td>11</td> <td></td></tr>
+            <tr><td>6550</td> <td data-copy="$">8039436403336776731</td> <td data-copy="/tp $">-2979 33 17423</td> <td>6</td> <td>11</td> <td></td></tr>
+            <tr><td>6891</td> <td data-copy="$">-4139727855099825468</td> <td data-copy="/tp $">-4317 43 7087</td> <td>3</td> <td>10</td> <td l>Also has a dungeon through the window</td></tr>
+            <tr><td>6893</td> <td data-copy="$">-7078989150725660575</td> <td data-copy="/tp $">7415 16 2176</td> <td>3</td> <td>7</td> <td l><a href="#fav-6893">This seed also includes a lava pool corrupted portal</a></td></tr>
+            <tr><td>6894</td> <td data-copy="$">6569460634131335885</td> <td data-copy="/tp $">214 41 10932</td> <td>4</td> <td>10</td> <td></td></tr>
+            <tr><td>7181</td> <td data-copy="$">4601526049833772874</td> <td data-copy="/tp $">1558 34 14782</td> <td>5</td> <td>11</td> <td></td></tr>
+            <tr><td>7256</td> <td data-copy="$">-4838936385868204423</td> <td data-copy="/tp $">11880 33 16358</td> <td>7</td> <td>3</td> <td></td></tr>
+            <tr><td>7424</td> <td data-copy="$">-2915926925510119330</td> <td data-copy="/tp $">13707 43 3347</td> <td>5</td> <td>11</td> <td></td></tr>
+            <tr><td>7826</td> <td data-copy="$">-7317619702338296868</td> <td data-copy="/tp $">11773 25 -13435</td> <td>6</td> <td>9</td> <td></td></tr>
+            <tr><td>8082</td> <td data-copy="$">-2584212802918710598</td> <td data-copy="/tp $">19468 28 -5366</td> <td>7</td> <td>11</td> <td></td></tr>
+        </table>
+    </section>
+    
+
+
+    <section>
+        <h2 id="favourites">Personal Favourites</h2>
+        <p>This section is a list of all my personal favourite finds across all the seeds, including every seed which appears in any of the above sections more than once. If you're only looking for the super interesting things, this is probably the list you'll want to start with!</p>
+        
+        <!-- On 2026-01-06 he said it'd be awesome if he popped a BT map and it had an air exposed SH on it, when you go through them all to categorise maybe check to see if any have that and include it in here. Especially in 1st ring :) -->
+
+        <table class="nobold">
+            <tr><th>Run #</th>                  <th>Seed</th>                                           <th>Coordinates</th>                          <th>SH Ring</th>      <th l>Notes</th></tr>
+            <tbody id="fav-280">
+                <tr><td b>280</td>     <td data-copy="$">7313349257861581322</td>                       <td data-copy="/tp $">-16476 ~ -10764</td>    <td>7</td>            <td l data-tippy-content="As measured from the 4,4 coordinate, this is 19,680.5 blocks from the origin, while 7th ring is supposed to start at 19,712.">Most out-of-ring stronghold found so far, being 31.5 blocks shallow of 7th ring</td></tr>
+            </tbody>
+            <tbody id="fav-611">
+                <tr><td b rowspan="2">611</td> <td data-copy="$" rowspan="2">565754781532228084</td>    <td data-copy="/tp $">-2173 16 20671</td>       <td>7</td>              <td l>Seven eye portal</td></tr>
+                <tr>                                                                                    <td data-copy="/tp $">  20004 66 -1420</td>     <td>7</td>              <td l>Surface exposed starter and both libraries with exposed books</td></tr>
+            </tbody>
+            <tbody id="fav-2372">
+                <tr><td> 2372</td>  <td data-copy="$"> 3235247295262144578</td>     <td data-copy="/tp $">   2564 66 13540</td>     <td>5</td>              <td l>Surface exposed starter, four-way, and both libraries with exposed books. On edge of a mushroom biome</td></tr>
+            </tbody>
+            <tbody id="fav-2477">
+                <tr><td b> 2477</td>  <td data-copy="$"> 3248448901639251271</td>                       <td data-copy="/tp $">-284 64 -8508</td>        <td>3</td>          <td l>This air exposed stronghold can be seen on the buried treasure map from the shipwreck chest at <span data-copy="/tp $">-146 43 -8369</span></td></tr>
+            </tbody>
+            <tbody id="fav-2760">
+                <tr><td b> 2760</td>  <td data-copy="$"> 8476639034411982759</td>                       <td data-copy="/tp $">  6692 62 -19532</td>     <td>7</td>          <td l>Part of this air exposed stronghold can be seen on the buried treasure map from the shipwreck chest below <span data-copy="/tp $">-6726 46 -19325</td></tr>
+            </tbody>
+            <tbody id="fav-2986">
+                <tr><td b rowspan="2">2986</td> <td data-copy="$" rowspan="2">-2942226551634673300</td> <td data-copy="/tp $">189 35 2266</td> <td>1</td> <td l>Seven eye portal in first ring</td></tr>
+                <tr>                                                                                    <td data-copy="/tp $">  16708 62 -2412</td>     <td>6</td>              <td l>Surface exposed starter</td></tr>
+            </tbody>
+            <tbody id="fav-2967">
+                <tr><td b>2967</td>   <td data-copy="$">-3160460405258960754</td>                       <td data-copy="/tp $">6120 ~ -1761</td>       <td>2 - 3</td>        <td l>Honourable mention for the furthest blind found so far, at 3337 blocks to the nearest stronghold</td></tr>
+            </tbody>
+            <tbody id="fav-3542">
+                <tr><td b rowspan="2">3542</td> <td data-copy="$" rowspan="4">9050453767186870953</td>  <td data-copy="/tp $">-7134 29 4159</td>        <td>3</td>          <td l>First of two corrupted portals (lava pool)</td></tr>
+                <tr>                                                                                    <td data-copy="/tp $">11514 34 -8567</td>       <td>5</td>          <td l>Second of two corrupted portals (water pool)</td></tr>
+            </tbody>
+            <tbody id="fav-4349">
+                <tr><td b>4349</td>   <td data-copy="$">6578020660561247468</td>                        <td data-copy="/tp $">4014 55 -7323</td>      <td>3</td>            <td l>Stronghold includes both air exposed library, and water pool corrupted portal! Corruption is somewhat directional. Experimental odds listed above puts the odds of this occurring at roughly 1 in 27,890,499</td></tr>
+            </tbody>
+            <tbody id="fav-5133">
+                <tr><td b rowspan="2">5133</td>  <td data-copy="$" rowspan="2">4629466838389676301</td> <td data-copy="/tp $">884 64 -11788</td>        <td>4</td>          <td l>Surface exposed starter staircase</td></tr>
+                <tr>                                                                                    <td data-copy="/tp $"> 11444 62 -13804</td>     <td>6</td>          <td l>Surface exposed starter staircase</td></tr>
+            </tbody>
+            <tbody id="fav-5651">
+                <tr><td b>5651</td>   <td data-copy="$">-1500824424303421722</td>                       <td data-copy="/tp $">2716 13 -4087</td>      <td>2</td>            <td l>Deepest portal room found so far, at 44 rooms deep</td></tr>
+            </tbody>
+            <tbody id="fav-6585">
+                <tr><td b rowspan="4">6585</td> <td data-copy="$" rowspan="4">8804374325081413216</td>  <td data-copy="/tp $">-17621 27 -16382</td>    <td>8</td>           <td l>First of three six eyes, in 8th ring</td></tr>
+                <tr>                                                                                    <td data-copy="/tp $">20073 32 189</td>        <td>7</td>           <td l>Second of three six eyes, in 7th ring</td></tr>
+                <tr>                                                                                    <td data-copy="/tp $">3323 43 19638</td>       <td>7</td>           <td l>Third of three six eyes, in 7th ring</td></tr>
+                <tr>                                                                                    <td data-copy="/tp $">-15521 38 12836</td>     <td>7</td>           <td l>Lava pool corrupted portal, with 10 frames. Also missing silverfish spawner</td></tr>
+            </tbody>
+            <tbody id="fav-5274">
+                <tr><td b rowspan="2">5274</td> <td data-copy="$" rowspan="2">-2752019995354910122</td> <td data-copy="/tp $">12 14 -5618</td> <td>2</td> <td l>Seven eye portal</td></tr>
+                <tr>                                                                                    <td data-copy="/tp $">  -2492 62 -7372</td>     <td>3</td>              <td l>Stronghold with two surface exposed libraries</td></tr>
+            </tbody>
+            <tbody id="fav-6893">
+                <tr><td b rowspan="2">6893</td> <td data-copy="$" rowspan="2">-7078989150725660575</td> <td data-copy="/tp $">6657 35 -8109</td>        <td>4</td>          <td l>First of two corrupted portals (lava pool)</td></tr>
+                <tr>                                                                                    <td data-copy="/tp $">7415 16 2176</td>         <td>3</td>          <td l>Second of two corrupted portals (ruined portal)</td></tr>
+            </tbody>
+            <tbody id="fav-7108">
+                <tr><td b rowspan="3">7108</td> <td data-copy="$" rowspan="3">6664592002035108918</td>  <td data-copy="/tp $">8 65 8</td>               <td>N/A</td>        <td l>This seed spawns you in the ocean without land</td></tr>
+                <tr>                                                                                    <td data-copy="/tp $">-13560 32 -4651</td>      <td>5</td>          <td l>First of two corrupted portals (lava pool)</td></tr>
+                <tr>                                                                                    <td data-copy="/tp $">5596 30 9875</td>         <td>4</td>          <td l>Second of two corrupted portals (lava pool)</td></tr>
+            </tbody>
+            <tbody id="fav-7624">
+                <tr><td> 7624</td>  <td data-copy="$">  675135172884692243</td>     <td data-copy="/tp $">-15772 62 -12700</td>     <td>7</td>              <td l>This stronghold also includes a trapped Elder Guardian at roughly <span data-copy="/tp $">-15841 45 -12684</span></td></tr>
+            </tbody>
+            <tbody id="fav-7885">
+                <tr><td b rowspan="2">7885</td> <td data-copy="$" rowspan="2">-1807872688967743749</td> <td data-copy="/tp $">-11822 15 -1041</td>      <td>4</td>          <td l>First of two corrupted portals (lava pool)</td></tr>
+                <tr>                                                                                    <td data-copy="/tp $">-12811 34 6765</td>       <td>5</td>          <td l>Second of two corrupted portals (water pool)</td></tr>
+            </tbody>
+        </table>
+    </section>
+    
+
+
+    <section>
+        <h2 id="missing-seeds">Missing Seeds</h2>
+        <p>There are approximately 120 seeds missing from the spreadsheet, due to them never being added to the sheet after the run. While some of these missing seeds have been found using videos, ones without a surviving VOD are likely lost to time. I've listed those runs below, if anyone is interested.</p>
+        <ul>
+            <li>Run #1062</li>
+            <li>Run #1068</li>
+            <li>Run #1145</li>
+            <li>Run #1284</li>
+            <li>Run #1332</li>
+            <li>Run #1345</li>
+            <li>Run #1383</li>
+            <li>Run #1435</li>
+            <li>Run #1489</li>
+            <li>Run #1497</li>
+            <li>Run #1571</li>
+            <li>Run #1606</li>
+            <li>Run #1618</li>
+            <li>Runs #1644 - #1740</li>
+            <li>Run #1937</li>
+            <li>Runs #1976 - #1980</li>
+            <li>Run #1985</li>
+            <li>Run #2001</li>
+            <li>Run #2023 <a href="https://youtu.be/7pP2k3-eDZY?si=6VbX-gUGya9E4shj&t=7017">(VOD)</a></li>
+            <li>Run #2025 <a href="https://youtu.be/7pP2k3-eDZY?si=21DWiXT9MYnJtK_g&t=11070">(VOD)</a></li>
+            <li>Run #2346</li>
+            <li>Run #3600, played in 1.21(.0) <a href="https://www.youtube.com/watch?v=VaXuEhy4c2k">(VOD)</a></li>
+        </ul>
+
+        <h3>Recovered Seeds</h3>
+        <p>While making this page, I reached out to <a href="https://www.youtube.com/@KrisSeedfinding">Kris</a>, who made a <a href="https://youtu.be/9e_UfEyuEjE?si=nqMFlXg9k_9q6nSm">video in December 2024</a> about a tool he built which could crack a seed as it was being played using footage from the stream. Using this tool, he was able to recover 11 missing seeds, which I verified against other info from the VODs and listed below. All of these seeds were also searched, and included in the data above. Hopefully these will be added to the spreadsheet soon.</p>
+        <ul>
+            <li>Run #1833 <a href="https://youtu.be/qFakRZVhK80?si=U97yPuCpv4sZSPwj&t=8750">(VOD)</a> → <span data-copy="$">-5209553425704246426</span></li>
+            <li>Run #1845 <a href="https://youtu.be/TBKYFHozILk?si=sSAUGgkW-XjKEhQt&t=14810">(VOD)</a> → <span data-copy="$">1960087107956545624</span></li>
+            <li>Run #1921 <a href="https://youtu.be/G7qy6oho4Y4?si=yMyfh8fH7J3I7QAS&t=14966">(VOD)</a> → <span data-copy="$">-2446936786798747824</span></li>
+            <li>Run #1986 <a href="https://youtu.be/FMtkjmJT934?si=UTvWC8mNJ8w1FGuq&t=15912">(VOD)</a> → <span data-copy="$">3291135908783880426</span></li>
+            <li>Run #2024 <a href="https://youtu.be/7pP2k3-eDZY?si=cirgu9ES6UNVHihB&t=9361">(VOD)</a> → <span data-copy="$">-8057921087884269310</span></li>
+            <li>Run #3501 <a href="https://youtu.be/0JqwDDklvNk?si=yLa_qGcu7sTlxZ0N&t=518">(VOD)</a> → <span data-copy="$">-1663288956396843851</span></li>
+            <li>Run #3591 <a href="https://www.youtube.com/watch?v=B7dgfzNCOD8">(VOD)</a> → <span data-copy="$">7129569850418169712</span></li>
+            <li>Run #3607 <a href="https://youtu.be/vJkMZYU3urY?si=XTk80_AxsoXzL2XM&t=891">(VOD)</a> → <span data-copy="$">4390035825662046355</span></li>
+            <li>Run #3615 <a href="https://www.youtube.com/watch?v=8wUQV4KmWnQ">(VOD)</a> → <span data-copy="$">8017097994958820225</span></li>
+            <li>Run #3617 <a href="https://youtu.be/8wUQV4KmWnQ?si=h2fweCeGryeMMd0H&t=3960">(VOD)</a> → <span data-copy="$">2770816279160382746</span></li>
+            <li>Run #3921 <a href="https://www.youtube.com/watch?v=Ga-59i9hNKQ">(VOD)</a> → <span data-copy="$">-3940085587555889347</span></li>
+        </ul>
+    </section>
+
+
+
+    <footer>
+        <p>All the information on this page was the result of code written by <a href="https://github.com/luisc99">luisc99</a>, using some libraries written by the amazing seed-finding community. While I've manually checked most things on this page, it's possible some errors may still exist, and some things may be missing from this page if my code didn't find a feature for whatever reason. Seeds will be updated periodically whenever I feel like this information is outdated enough to require it, but rest assured I do check every seed, almost always on the same day it gets played &#x3C;3</p>
+    </footer>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('[data-tippy-content]');
+
+        tippy('[data-copy]', {
+            content: "<span class='positive'>Copied!</span>",
+            allowHTML: true,
+            trigger: 'click',
+            duration: [250, 500],
+            hideOnClick: false,
+            offset: [0, 4],
+            onShow(instance) { setTimeout(() => { instance.hide(); }, 750); }
+        })
+        
+        document.addEventListener("click", async (e) => {
+            try {
+                const target = e.target;
+                const attr = e.target.attributes["data-copy"].value;
+                var copy = attr;
+                if(copy.includes("$")) { copy = copy.replaceAll("$", e.target.textContent.trim()); }
+                await navigator.clipboard.writeText(copy);
+            }
+            catch (err) { /* silently fail */ }
+        })
+    </script>
+</body>
+</html>
