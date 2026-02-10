@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Couriway's 100K Stronghold Summary</title>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>100K Stronghold Summary</h1>
+<body class="mc-theme">
+    <div class="hero">
+        <h1>100K Stronghold Summary</h1>
+        <p class="hero-sub">Couriway's seeds · Strongholds &amp; End Portals</p>
+    </div>
+    <main class="main-content">
     <p>In 2024, I was watching one of Couriway's streams, and chat was talking about what sort of things might be in the seeds that get rolled, but never actually found during the run. Inspired by this, I wrote some (somewhat slow) code to scan through all 128 strongholds in all of Couriway's seeds, to see if there were any 8-eye portals. I didn't find any, but did find a bunch of other interesting things, and since then, I've continued to scan all of the seeds rolled throughout the 100K challenge, usually within a few minutes of the run being completed, and share the coolest finds with the stream. This site is intended to document all of the interesting things I find, to avoid them getting lost to time.</p>
     
     <p>For those who are unaware, each world has 128 strongholds, <a href="https://minecraft.wiki/w/Stronghold#Java_Edition">which generate in ring around 0,0</a>. As these rings grow, the number of strongholds in each one increases. Collectively, the 6th and 7th rings contain exactly half of a world's strongholds, which is why so many things on this page seem to be within those two rings. Less than 15% of strongholds are within the first three rings. It is somewhat rare Couri will travel far enough in the Nether to go beyond third ring, which is why he is unlikely to have come across most things on this page.</p>
@@ -1227,7 +1234,7 @@
         </ul>
     </section>
 
-
+    </main>
 
     <footer>
         <p>All the information on this page was the result of code written by <a href="https://github.com/luisc99">luisc99</a>, using some libraries written by the amazing seed-finding community. While I've manually checked most things on this page, it's possible some errors may still exist, and some things may be missing from this page if my code didn't find a feature for whatever reason. Seeds will be updated periodically whenever I feel like this information is outdated enough to require it, but rest assured I do check every seed, almost always on the same day it gets played &#x3C;3</p>
@@ -1256,7 +1263,144 @@
                 await navigator.clipboard.writeText(copy);
             }
             catch (err) { /* silently fail */ }
-        })
+        });
+
+        (function() {
+            var MIN_ROWS_FOR_SEARCH = 8;
+
+            function cellText(cell) {
+                return (cell.textContent || '').trim();
+            }
+
+            function parseValue(text) {
+                var cleaned = text.replace(/,/g, '').replace(/\s+/g, ' ');
+                var num = parseFloat(cleaned);
+                if (!isNaN(num)) return num;
+                var firstNum = parseFloat(cleaned);
+                if (!isNaN(firstNum)) return firstNum;
+                return cleaned.toLowerCase();
+            }
+
+            function compare(a, b, colIndex, asc) {
+                var aText = cellText(a.cells[colIndex]);
+                var bText = cellText(b.cells[colIndex]);
+                var aVal = parseValue(aText);
+                var bVal = parseValue(bText);
+                var out = 0;
+                if (typeof aVal === 'number' && typeof bVal === 'number') {
+                    out = aVal - bVal;
+                } else {
+                    out = String(aVal).localeCompare(String(bVal), undefined, { numeric: true });
+                }
+                if (out === 0) return 0;
+                return asc ? out : -out;
+            }
+
+            function makeSortable(table) {
+                var rows = table.querySelectorAll('tr');
+                if (rows.length < MIN_ROWS_FOR_SEARCH) return;
+                var headerRow = rows[0];
+                var headerCells = headerRow.querySelectorAll('th');
+                if (!headerCells.length) return;
+
+                var totalRows = rows.length - 1;
+                var parent = table.parentNode;
+                var nextSibling = table.nextSibling;
+
+                var wrapper = document.createElement('div');
+                wrapper.className = 'table-wrapper';
+
+                var toolbar = document.createElement('div');
+                toolbar.className = 'table-toolbar';
+                var search = document.createElement('input');
+                search.type = 'search';
+                search.className = 'table-search';
+                search.placeholder = 'Search in this table…';
+                search.setAttribute('aria-label', 'Search table');
+                var countSpan = document.createElement('span');
+                countSpan.className = 'table-count';
+                countSpan.textContent = totalRows + ' rows';
+
+                var toggleBtn = document.createElement('button');
+                toggleBtn.type = 'button';
+                toggleBtn.className = 'table-toggle';
+                toggleBtn.setAttribute('aria-label', 'Collapse table');
+                var icon = document.createElement('span');
+                icon.className = 'table-toggle-icon';
+                icon.textContent = '▼';
+                toggleBtn.appendChild(icon);
+                toggleBtn.appendChild(document.createTextNode(' Collapse'));
+
+                toolbar.appendChild(search);
+                toolbar.appendChild(countSpan);
+                toolbar.appendChild(toggleBtn);
+
+                var container = document.createElement('div');
+                container.className = 'table-container';
+                container.appendChild(table);
+
+                wrapper.appendChild(toolbar);
+                wrapper.appendChild(container);
+                parent.insertBefore(wrapper, nextSibling);
+
+                toggleBtn.addEventListener('click', function() {
+                    var isCollapsed = wrapper.classList.contains('collapsed');
+                    if (isCollapsed) {
+                        wrapper.classList.remove('collapsed');
+                        container.style.maxHeight = container.scrollHeight + 'px';
+                        toggleBtn.setAttribute('aria-label', 'Collapse table');
+                        icon.textContent = '▼';
+                        toggleBtn.lastChild.textContent = ' Collapse';
+                        setTimeout(function() { container.style.maxHeight = ''; }, 450);
+                    } else {
+                        container.style.maxHeight = container.offsetHeight + 'px';
+                        container.offsetHeight;
+                        wrapper.classList.add('collapsed');
+                        container.style.maxHeight = '0';
+                        toggleBtn.setAttribute('aria-label', 'Expand table');
+                        icon.textContent = '▶';
+                        toggleBtn.lastChild.textContent = ' Expand';
+                    }
+                });
+
+                var dataRows = Array.prototype.slice.call(rows, 1);
+                var currentSort = { col: -1, asc: true };
+
+                search.addEventListener('input', function() {
+                    var q = (search.value || '').trim().toLowerCase();
+                    var visible = 0;
+                    dataRows.forEach(function(tr) {
+                        var text = (tr.textContent || '').toLowerCase();
+                        var show = !q || text.indexOf(q) !== -1;
+                        tr.style.display = show ? '' : 'none';
+                        if (show) visible++;
+                    });
+                    countSpan.textContent = q ? visible + ' of ' + totalRows + ' rows' : totalRows + ' rows';
+                });
+
+                headerCells.forEach(function(th, colIndex) {
+                    th.classList.add('sortable');
+                    th.addEventListener('click', function() {
+                        var asc = currentSort.col === colIndex ? !currentSort.asc : true;
+                        currentSort = { col: colIndex, asc: asc };
+
+                        headerCells.forEach(function(h) {
+                            h.classList.remove('sort-asc', 'sort-desc');
+                        });
+                        th.classList.add(asc ? 'sort-asc' : 'sort-desc');
+
+                        dataRows.sort(function(a, b) {
+                            return compare(a, b, colIndex, asc);
+                        });
+                        dataRows.forEach(function(tr) {
+                            table.appendChild(tr);
+                        });
+                    });
+                });
+            }
+
+            document.querySelectorAll('section table').forEach(makeSortable);
+        })();
     </script>
 </body>
 </html>
